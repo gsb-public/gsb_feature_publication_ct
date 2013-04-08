@@ -196,7 +196,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'maxlength_js_label' => '',
         ),
         'type' => 'taxonomy_hs',
-        'weight' => '14',
+        'weight' => '15',
       ),
       'workbench_access_field' => 0,
     ),
@@ -390,7 +390,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => '19',
+        'weight' => '20',
       ),
       'workbench_access_field' => 0,
     ),
@@ -419,7 +419,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'second' => 0,
           'year' => 'year',
         ),
-        'repeat' => '0',
+        'repeat' => 0,
         'timezone_db' => '',
         'todate' => '',
         'tz_handling' => 'none',
@@ -594,7 +594,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'maxlength_js_label' => '',
         ),
         'type' => 'taxonomy_hs',
-        'weight' => '16',
+        'weight' => '17',
       ),
       'workbench_access_field' => 0,
     ),
@@ -888,7 +888,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'maxlength_js_label' => '',
         ),
         'type' => 'taxonomy_hs',
-        'weight' => '17',
+        'weight' => '18',
       ),
       'workbench_access_field' => 0,
     ),
@@ -986,6 +986,117 @@ function gsb_feature_publication_ct_field_default_fields() {
         ),
         'type' => 'text_textfield',
         'weight' => '5',
+      ),
+      'workbench_access_field' => 0,
+    ),
+  );
+
+  // Exported field: 'node-publication-field_link_unlimited'.
+  $fields['node-publication-field_link_unlimited'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_link_unlimited',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'link',
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'rel' => '',
+          'target' => 'default',
+        ),
+        'display' => array(
+          'url_cutoff' => 80,
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => 128,
+        'title_value' => '',
+        'url' => 0,
+      ),
+      'translatable' => '0',
+      'type' => 'link_field',
+    ),
+    'field_instance' => array(
+      'bundle' => 'publication',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'link',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'link_default',
+          'weight' => 21,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'ds_extras_field_template' => '',
+      'entity_type' => 'node',
+      'field_name' => 'field_link_unlimited',
+      'label' => 'Related Links',
+      'required' => 0,
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'configurable_title' => 0,
+          'rel' => '',
+          'target' => 'default',
+          'title' => '',
+        ),
+        'display' => array(
+          'url_cutoff' => '80',
+        ),
+        'enable_tokens' => 1,
+        'linkit' => array(
+          'enable' => 0,
+          'insert_plugin' => '',
+        ),
+        'title' => 'optional',
+        'title_maxlength' => '128',
+        'title_value' => '',
+        'url' => 0,
+        'user_register_form' => FALSE,
+        'validate_url' => 1,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'link',
+        'settings' => array(
+          'maxlength_js_label' => '',
+        ),
+        'type' => 'link_field',
+        'weight' => '14',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1212,7 +1323,7 @@ function gsb_feature_publication_ct_field_default_fields() {
       'locked' => '0',
       'module' => 'field_collection',
       'settings' => array(
-        'hide_blank_items' => 1,
+        'hide_blank_items' => TRUE,
         'path' => '',
       ),
       'translatable' => '0',
@@ -1664,7 +1775,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'maxlength_js_label' => '',
         ),
         'type' => 'taxonomy_hs',
-        'weight' => '18',
+        'weight' => '19',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1761,7 +1872,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => '20',
+        'weight' => '21',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1856,7 +1967,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'maxlength_js_label' => '',
         ),
         'type' => 'taxonomy_hs',
-        'weight' => '15',
+        'weight' => '16',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1977,6 +2088,7 @@ function gsb_feature_publication_ct_field_default_fields() {
   t('Publication Link');
   t('Publisher');
   t('Region');
+  t('Related Links');
   t('Selected Reviews');
   t('Tag');
   t('Target Audience');
