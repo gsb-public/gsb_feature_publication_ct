@@ -65,7 +65,7 @@ function gsb_feature_publication_ct_field_group_info() {
       6 => 'field_tag',
       7 => 'field_target_audience',
     ),
-    'format_type' => 'div',
+    'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
       'label' => 'Tags:',
       'instance_settings' => array(
