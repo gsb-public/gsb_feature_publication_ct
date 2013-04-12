@@ -221,13 +221,13 @@ function gsb_feature_publication_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 22,
+          'weight' => '15',
         ),
         'featured' => array(
           'label' => 'above',
@@ -269,7 +269,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         ),
         'type' => 'taxonomy_hs',
-        'weight' => '26',
+        'weight' => '16',
       ),
       'workbench_access_field' => 0,
     ),
@@ -309,13 +309,13 @@ function gsb_feature_publication_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 11,
+          'weight' => '9',
         ),
         'featured' => array(
           'label' => 'above',
@@ -366,7 +366,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '9',
+        'weight' => '10',
       ),
       'workbench_access_field' => 0,
     ),
@@ -413,13 +413,13 @@ function gsb_feature_publication_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 13,
+          'weight' => '8',
         ),
         'featured' => array(
           'label' => 'above',
@@ -461,7 +461,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'maxlength_js_label' => '',
         ),
         'type' => 'taxonomy_hs',
-        'weight' => '27',
+        'weight' => '17',
       ),
       'workbench_access_field' => 0,
     ),
@@ -508,13 +508,13 @@ function gsb_feature_publication_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 18,
+          'weight' => '12',
         ),
         'featured' => array(
           'label' => 'above',
@@ -558,7 +558,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => '32',
+        'weight' => '22',
       ),
       'workbench_access_field' => 0,
     ),
@@ -587,7 +587,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'second' => 0,
           'year' => 'year',
         ),
-        'repeat' => '0',
+        'repeat' => 0,
         'timezone_db' => '',
         'todate' => '',
         'tz_handling' => 'none',
@@ -601,7 +601,7 @@ function gsb_feature_publication_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'date',
           'settings' => array(
             'conditions' => array(),
@@ -613,7 +613,7 @@ function gsb_feature_publication_ct_field_default_fields() {
             'show_repeat_rule' => 'show',
           ),
           'type' => 'date_default',
-          'weight' => 8,
+          'weight' => '2',
         ),
         'featured' => array(
           'label' => 'above',
@@ -714,13 +714,13 @@ function gsb_feature_publication_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 15,
+          'weight' => '10',
         ),
         'featured' => array(
           'label' => 'above',
@@ -762,7 +762,85 @@ function gsb_feature_publication_ct_field_default_fields() {
           'maxlength_js_label' => '',
         ),
         'type' => 'taxonomy_hs',
-        'weight' => '28',
+        'weight' => '18',
+      ),
+      'workbench_access_field' => 0,
+    ),
+  );
+
+  // Exported field: 'node-publication-field_file_single_public'.
+  $fields['node-publication-field_file_single_public'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_file_single_public',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'file',
+      'settings' => array(
+        'display_default' => 0,
+        'display_field' => 0,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'type' => 'file',
+    ),
+    'field_instance' => array(
+      'bundle' => 'publication',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'file',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'file_default',
+          'weight' => '6',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'ds_extras_field_template' => '',
+      'entity_type' => 'node',
+      'field_name' => 'field_file_single_public',
+      'label' => 'Sample File',
+      'required' => 0,
+      'settings' => array(
+        'description_field' => 0,
+        'file_directory' => 'publication-sample',
+        'file_extensions' => 'txt pdf doc docx xls xlsx ppt pptx',
+        'max_filesize' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'file',
+        'settings' => array(
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'file_generic',
+        'weight' => '4',
       ),
       'workbench_access_field' => 0,
     ),
@@ -804,15 +882,14 @@ function gsb_feature_publication_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
-          'module' => 'image',
+          'label' => 'hidden',
+          'module' => 'file_entity',
           'settings' => array(
             'conditions' => array(),
-            'image_link' => '',
-            'image_style' => '',
+            'file_view_mode' => 'default',
           ),
-          'type' => 'image',
-          'weight' => 1,
+          'type' => 'file_rendered',
+          'weight' => '7',
         ),
         'featured' => array(
           'label' => 'above',
@@ -911,13 +988,13 @@ function gsb_feature_publication_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 16,
+          'weight' => '13',
         ),
         'featured' => array(
           'label' => 'above',
@@ -959,7 +1036,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'maxlength_js_label' => '',
         ),
         'type' => 'taxonomy_hs',
-        'weight' => '29',
+        'weight' => '19',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1001,13 +1078,13 @@ function gsb_feature_publication_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 5,
+          'weight' => '2',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1056,7 +1133,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '6',
+        'weight' => '7',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1100,12 +1177,9 @@ function gsb_feature_publication_ct_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'link',
-          'settings' => array(
-            'conditions' => array(),
-          ),
-          'type' => 'link_default',
-          'weight' => 21,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '16',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1167,7 +1241,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'maxlength_js_label' => '',
         ),
         'type' => 'link_field',
-        'weight' => '11',
+        'weight' => '12',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1210,13 +1284,13 @@ function gsb_feature_publication_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'link',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'link_default',
-          'weight' => 9,
+          'weight' => '3',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1278,7 +1352,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'maxlength_js_label' => '',
         ),
         'type' => 'link_field',
-        'weight' => '4',
+        'weight' => '5',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1320,13 +1394,13 @@ function gsb_feature_publication_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 7,
+          'weight' => '3',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1375,7 +1449,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '7',
+        'weight' => '8',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1407,18 +1481,15 @@ function gsb_feature_publication_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
-          'module' => 'field_collection',
+          'label' => 'inline',
+          'module' => 'gsb_field_formatter',
           'settings' => array(
-            'add' => 'Add',
             'conditions' => array(),
-            'delete' => 'Delete',
-            'description' => TRUE,
-            'edit' => 'Edit',
+            'separator' => ', ',
             'view_mode' => 'full',
           ),
-          'type' => 'field_collection_view',
-          'weight' => 20,
+          'type' => 'gsb_field_formatter_field_collection_separator',
+          'weight' => '1',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1495,15 +1566,11 @@ function gsb_feature_publication_ct_field_default_fields() {
           'label' => 'above',
           'module' => 'field_collection',
           'settings' => array(
-            'add' => 'Add',
             'conditions' => array(),
-            'delete' => 'Delete',
-            'description' => TRUE,
-            'edit' => 'Edit',
             'view_mode' => 'full',
           ),
-          'type' => 'field_collection_view',
-          'weight' => 23,
+          'type' => 'field_collection_fields',
+          'weight' => '10',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1545,7 +1612,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         ),
         'type' => 'field_collection_embed',
-        'weight' => '10',
+        'weight' => '11',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1587,13 +1654,13 @@ function gsb_feature_publication_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 6,
+          'weight' => '5',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1642,7 +1709,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '8',
+        'weight' => '9',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1689,13 +1756,13 @@ function gsb_feature_publication_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 17,
+          'weight' => '11',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1737,7 +1804,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'maxlength_js_label' => '',
         ),
         'type' => 'taxonomy_hs',
-        'weight' => '30',
+        'weight' => '20',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1784,13 +1851,13 @@ function gsb_feature_publication_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 19,
+          'weight' => '14',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1834,7 +1901,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => '33',
+        'weight' => '23',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1881,13 +1948,13 @@ function gsb_feature_publication_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 14,
+          'weight' => '9',
         ),
         'featured' => array(
           'label' => 'above',
@@ -1929,7 +1996,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'maxlength_js_label' => '',
         ),
         'type' => 'taxonomy_hs',
-        'weight' => '31',
+        'weight' => '21',
       ),
       'workbench_access_field' => 0,
     ),
@@ -1971,13 +2038,13 @@ function gsb_feature_publication_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 4,
+          'weight' => '1',
         ),
         'featured' => array(
           'label' => 'above',
@@ -2026,7 +2093,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '5',
+        'weight' => '6',
       ),
       'workbench_access_field' => 0,
     ),
@@ -2051,6 +2118,7 @@ function gsb_feature_publication_ct_field_default_fields() {
   t('Related Links');
   t('Review Text');
   t('Reviewer');
+  t('Sample File');
   t('Selected Reviews');
   t('Tag');
   t('Target Audience');
