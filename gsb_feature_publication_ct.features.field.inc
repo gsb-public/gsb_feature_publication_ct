@@ -241,7 +241,7 @@ function gsb_feature_publication_ct_field_default_fields() {
             'taxonomy_term_separator' => ', ',
           ),
           'type' => 'ds_taxonomy_separator',
-          'weight' => '15',
+          'weight' => '12',
         ),
         'default' => array(
           'label' => 'hidden',
@@ -343,9 +343,10 @@ function gsb_feature_publication_ct_field_default_fields() {
           'module' => 'text',
           'settings' => array(
             'conditions' => array(),
+            'trim_length' => '150',
           ),
-          'type' => 'text_default',
-          'weight' => '9',
+          'type' => 'text_trimmed',
+          'weight' => '3',
         ),
         'default' => array(
           'label' => 'hidden',
@@ -463,7 +464,7 @@ function gsb_feature_publication_ct_field_default_fields() {
             'taxonomy_term_separator' => ', ',
           ),
           'type' => 'ds_taxonomy_separator',
-          'weight' => '8',
+          'weight' => '4',
         ),
         'default' => array(
           'label' => 'hidden',
@@ -576,7 +577,7 @@ function gsb_feature_publication_ct_field_default_fields() {
             'taxonomy_term_separator' => ', ',
           ),
           'type' => 'ds_taxonomy_separator',
-          'weight' => '12',
+          'weight' => '9',
         ),
         'default' => array(
           'label' => 'hidden',
@@ -691,7 +692,7 @@ function gsb_feature_publication_ct_field_default_fields() {
             'show_repeat_rule' => 'show',
           ),
           'type' => 'date_default',
-          'weight' => '2',
+          'weight' => '1',
         ),
         'default' => array(
           'label' => 'hidden',
@@ -824,7 +825,7 @@ function gsb_feature_publication_ct_field_default_fields() {
             'taxonomy_term_separator' => ', ',
           ),
           'type' => 'ds_taxonomy_separator',
-          'weight' => '10',
+          'weight' => '7',
         ),
         'default' => array(
           'label' => 'hidden',
@@ -926,12 +927,9 @@ function gsb_feature_publication_ct_field_default_fields() {
       'display' => array(
         'business_insight' => array(
           'label' => 'hidden',
-          'module' => 'file',
-          'settings' => array(
-            'conditions' => array(),
-          ),
-          'type' => 'file_default',
-          'weight' => '6',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '17',
         ),
         'default' => array(
           'label' => 'hidden',
@@ -1018,7 +1016,7 @@ function gsb_feature_publication_ct_field_default_fields() {
             'file_view_mode' => 'default',
           ),
           'type' => 'file_rendered',
-          'weight' => '7',
+          'weight' => '0',
         ),
         'default' => array(
           'label' => 'hidden',
@@ -1139,7 +1137,7 @@ function gsb_feature_publication_ct_field_default_fields() {
             'taxonomy_term_separator' => ', ',
           ),
           'type' => 'ds_taxonomy_separator',
-          'weight' => '13',
+          'weight' => '10',
         ),
         'default' => array(
           'label' => 'hidden',
@@ -1240,12 +1238,9 @@ function gsb_feature_publication_ct_field_default_fields() {
       'display' => array(
         'business_insight' => array(
           'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'conditions' => array(),
-          ),
-          'type' => 'text_default',
-          'weight' => '2',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '13',
         ),
         'default' => array(
           'label' => 'hidden',
@@ -1349,7 +1344,7 @@ function gsb_feature_publication_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '16',
+          'weight' => '18',
         ),
         'default' => array(
           'label' => 'above',
@@ -1461,12 +1456,9 @@ function gsb_feature_publication_ct_field_default_fields() {
       'display' => array(
         'business_insight' => array(
           'label' => 'hidden',
-          'module' => 'link',
-          'settings' => array(
-            'conditions' => array(),
-          ),
-          'type' => 'link_default',
-          'weight' => '3',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '14',
         ),
         'default' => array(
           'label' => 'hidden',
@@ -1580,12 +1572,9 @@ function gsb_feature_publication_ct_field_default_fields() {
       'display' => array(
         'business_insight' => array(
           'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'conditions' => array(),
-          ),
-          'type' => 'text_default',
-          'weight' => '3',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '15',
         ),
         'default' => array(
           'label' => 'hidden',
@@ -1676,14 +1665,9 @@ function gsb_feature_publication_ct_field_default_fields() {
       'display' => array(
         'business_insight' => array(
           'label' => 'inline',
-          'module' => 'gsb_field_formatter',
-          'settings' => array(
-            'conditions' => array(),
-            'separator' => ', ',
-            'view_mode' => 'full',
-          ),
-          'type' => 'gsb_field_formatter_field_collection_separator',
-          'weight' => '1',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '12',
         ),
         'default' => array(
           'label' => 'inline',
@@ -1774,12 +1758,8 @@ function gsb_feature_publication_ct_field_default_fields() {
       'display' => array(
         'business_insight' => array(
           'label' => 'above',
-          'module' => 'field_collection',
-          'settings' => array(
-            'conditions' => array(),
-            'view_mode' => 'full',
-          ),
-          'type' => 'field_collection_fields',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => '10',
         ),
         'default' => array(
@@ -1875,12 +1855,9 @@ function gsb_feature_publication_ct_field_default_fields() {
       'display' => array(
         'business_insight' => array(
           'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'conditions' => array(),
-          ),
-          'type' => 'text_default',
-          'weight' => '5',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '16',
         ),
         'default' => array(
           'label' => 'hidden',
@@ -1993,7 +1970,7 @@ function gsb_feature_publication_ct_field_default_fields() {
             'taxonomy_term_separator' => ', ',
           ),
           'type' => 'ds_taxonomy_separator',
-          'weight' => '11',
+          'weight' => '8',
         ),
         'default' => array(
           'label' => 'hidden',
@@ -2106,7 +2083,7 @@ function gsb_feature_publication_ct_field_default_fields() {
             'taxonomy_term_separator' => ', ',
           ),
           'type' => 'ds_taxonomy_separator',
-          'weight' => '14',
+          'weight' => '11',
         ),
         'default' => array(
           'label' => 'hidden',
@@ -2221,7 +2198,7 @@ function gsb_feature_publication_ct_field_default_fields() {
             'taxonomy_term_separator' => ', ',
           ),
           'type' => 'ds_taxonomy_separator',
-          'weight' => '9',
+          'weight' => '6',
         ),
         'default' => array(
           'label' => 'hidden',
@@ -2322,12 +2299,9 @@ function gsb_feature_publication_ct_field_default_fields() {
       'display' => array(
         'business_insight' => array(
           'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'conditions' => array(),
-          ),
-          'type' => 'text_default',
-          'weight' => '1',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '11',
         ),
         'default' => array(
           'label' => 'hidden',
