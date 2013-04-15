@@ -54,7 +54,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags wrapper',
-    'weight' => '4',
+    'weight' => '15',
     'children' => array(
       0 => 'field_academic_area_unlimited',
       1 => 'field_business_insight_topic',

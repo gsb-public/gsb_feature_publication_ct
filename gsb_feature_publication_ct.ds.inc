@@ -22,11 +22,6 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'label' => 'hidden',
       'format' => 'default',
     ),
-    'field_body' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
-      ),
-    ),
   );
   $export['node|publication|business_insight'] = $ds_fieldsetting;
 
@@ -111,43 +106,38 @@ function gsb_feature_publication_ct_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'publication';
   $ds_layout->view_mode = 'business_insight';
-  $ds_layout->layout = 'ds_1col';
+  $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
     'regions' => array(
-      'ds_content' => array(
-        0 => 'field_image_single_public',
-        1 => 'field_date_published',
+      'left' => array(
+        0 => 'field_person_other',
+      ),
+      'right' => array(
+        1 => 'field_image_single_public',
         2 => 'title',
-        3 => 'field_body',
-        4 => 'group_tags_wrapper',
-        5 => 'field_business_insight_topic',
-        6 => 'field_target_audience',
-        7 => 'field_discipline',
-        8 => 'field_region',
-        9 => 'field_company_organization',
-        10 => 'field_industry',
-        11 => 'field_tag',
-        12 => 'field_academic_area_unlimited',
+        3 => 'field_publisher',
+        4 => 'field_link_website',
+        5 => 'field_volume_number',
+        6 => 'field_issue_number',
+        7 => 'field_date_published',
+        8 => 'field_pages',
       ),
     ),
     'fields' => array(
-      'field_image_single_public' => 'ds_content',
-      'field_date_published' => 'ds_content',
-      'title' => 'ds_content',
-      'field_body' => 'ds_content',
-      'group_tags_wrapper' => 'ds_content',
-      'field_business_insight_topic' => 'ds_content',
-      'field_target_audience' => 'ds_content',
-      'field_discipline' => 'ds_content',
-      'field_region' => 'ds_content',
-      'field_company_organization' => 'ds_content',
-      'field_industry' => 'ds_content',
-      'field_tag' => 'ds_content',
-      'field_academic_area_unlimited' => 'ds_content',
+      'field_person_other' => 'left',
+      'field_image_single_public' => 'right',
+      'title' => 'right',
+      'field_publisher' => 'right',
+      'field_link_website' => 'right',
+      'field_volume_number' => 'right',
+      'field_issue_number' => 'right',
+      'field_date_published' => 'right',
+      'field_pages' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
-      'ds_content' => 'div',
+      'left' => 'div',
+      'right' => 'div',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
