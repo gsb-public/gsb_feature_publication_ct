@@ -24,8 +24,9 @@ function gsb_feature_publication_ct_field_group_info() {
     'weight' => '4',
     'children' => array(
       0 => 'field_issue_number',
-      1 => 'field_pages',
-      2 => 'field_volume_number',
+      1 => 'field_link_website',
+      2 => 'field_pages',
+      3 => 'field_volume_number',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -142,6 +143,38 @@ function gsb_feature_publication_ct_field_group_info() {
     ),
   );
   $export['group_tags_wrapper|node|publication|teaser'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_name|field_collection_item|field_person_other|default';
+  $field_group->group_name = 'group_wrapper_name';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_person_other';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Name wrapper',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_first_name',
+      1 => 'field_last_name',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Name wrapper',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_wrapper_name|field_collection_item|field_person_other|default'] = $field_group;
 
   return $export;
 }
