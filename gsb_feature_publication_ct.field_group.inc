@@ -54,7 +54,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->mode = 'business_insight';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Tags wrapper',
+    'label' => 'Tags:',
     'weight' => '15',
     'children' => array(
       0 => 'field_academic_area_unlimited',
@@ -88,7 +88,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Tags: ',
+    'label' => 'Tags:',
     'weight' => '8',
     'children' => array(
       0 => 'field_academic_area_unlimited',
@@ -102,9 +102,11 @@ function gsb_feature_publication_ct_field_group_info() {
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
-      'label' => 'Tags: ',
+      'label' => 'Tags:',
       'instance_settings' => array(
         'classes' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
       ),
       'formatter' => 'open',
     ),
@@ -138,6 +140,8 @@ function gsb_feature_publication_ct_field_group_info() {
       'label' => 'Tags:',
       'instance_settings' => array(
         'classes' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
       ),
       'formatter' => 'open',
     ),
