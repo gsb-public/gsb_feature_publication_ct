@@ -120,5 +120,12 @@ function gsb_feature_publication_ct_strongarm() {
   $strongarm->value = 0;
   $export['node_submitted_publication'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_publication_pattern';
+  $strongarm->value = 'faculty-research/research/publications/[node:title]';
+  $export['pathauto_node_publication_pattern'] = $strongarm;
+
   return $export;
 }
