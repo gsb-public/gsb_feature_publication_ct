@@ -1513,6 +1513,77 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-publication-field_search_field'
+  $field_instances['node-publication-field_search_field'] = array(
+    'bundle' => 'publication',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'business_insight' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'concat_field',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'concat_field_blank',
+        'weight' => 17,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_search_field',
+    'label' => 'Search field',
+    'required' => 0,
+    'settings' => array(
+      'selected_fields' => array(
+        'field_academic_area_unlimited' => 'field_academic_area_unlimited',
+        'field_addthis' => 0,
+        'field_body' => 'field_body',
+        'field_business_insight_topic' => 'field_business_insight_topic',
+        'field_company_organization' => 'field_company_organization',
+        'field_date_published' => 'field_date_published',
+        'field_discipline' => 'field_discipline',
+        'field_file_single_public' => 0,
+        'field_image_single_public' => 0,
+        'field_industry' => 'field_industry',
+        'field_issue_number' => 'field_issue_number',
+        'field_link_unlimited' => 'field_link_unlimited',
+        'field_link_website' => 'field_link_website',
+        'field_pages' => 'field_pages',
+        'field_person_other' => 'field_person_other',
+        'field_publication_reviews' => 'field_publication_reviews',
+        'field_publisher' => 'field_publisher',
+        'field_region' => 'field_region',
+        'field_tag' => 'field_tag',
+        'field_target_audience' => 0,
+        'field_volume_number' => 'field_volume_number',
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'concat_field',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'concat_field_default',
+      'weight' => 26,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-publication-field_tag'
   $field_instances['node-publication-field_tag'] = array(
     'bundle' => 'publication',
@@ -1761,6 +1832,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
   t('Review Text');
   t('Reviewer');
   t('Sample File');
+  t('Search field');
   t('Selected Reviews');
   t('Tag');
   t('Target Audience');
