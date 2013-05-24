@@ -726,7 +726,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
   $field_instances['node-publication-field_image_single_public'] = array(
     'bundle' => 'publication',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Recommended size for uploaded images is 600x440.',
     'display' => array(
       'business_insight' => array(
         'label' => 'hidden',
@@ -1827,6 +1827,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
   t('Pages');
   t('Publication');
   t('Publisher');
+  t('Recommended size for uploaded images is 600x440.');
   t('Region');
   t('Related Links');
   t('Review Text');
