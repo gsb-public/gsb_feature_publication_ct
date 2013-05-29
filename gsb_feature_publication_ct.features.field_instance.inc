@@ -730,24 +730,24 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'display' => array(
       'business_insight' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
           'image_link' => '',
           'image_style' => '',
         ),
-        'type' => 'image',
+        'type' => 'gsb_field_formatter_image',
         'weight' => 1,
       ),
       'default' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
           'image_link' => '',
           'image_style' => '',
         ),
-        'type' => 'image',
+        'type' => 'gsb_field_formatter_image',
         'weight' => 0,
       ),
       'featured' => array(
@@ -764,13 +764,13 @@ function gsb_feature_publication_ct_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
           'image_link' => 'content',
           'image_style' => '170x170',
         ),
-        'type' => 'image',
+        'type' => 'gsb_field_formatter_image',
         'weight' => 0,
       ),
       'tiny' => array(
