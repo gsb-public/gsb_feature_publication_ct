@@ -1548,6 +1548,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'selected_fields' => array(
+        'concat_field_entity_label' => 'concat_field_entity_label',
         'field_academic_area_unlimited' => 'field_academic_area_unlimited',
         'field_addthis' => 0,
         'field_body' => 'field_body',
