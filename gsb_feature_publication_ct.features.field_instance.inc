@@ -10,132 +10,6 @@
 function gsb_feature_publication_ct_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'field_collection_item-field_publication_reviews-field_body'
-  $field_instances['field_collection_item-field_publication_reviews-field_body'] = array(
-    'bundle' => 'field_publication_reviews',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'research_pager' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'tiny' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_body',
-    'label' => 'Review Text',
-    'required' => 0,
-    'settings' => array(
-      'linkit' => array(
-        'enable' => 0,
-        'insert_plugin' => '',
-      ),
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'maxlength_js' => '',
-        'maxlength_js_enforce' => 0,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'maxlength_js_truncate_html' => 0,
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 0,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'field_collection_item-field_publication_reviews-field_publication_reviewer'
-  $field_instances['field_collection_item-field_publication_reviews-field_publication_reviewer'] = array(
-    'bundle' => 'field_publication_reviews',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'inline',
-        'module' => 'text',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'research_pager' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'tiny' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_publication_reviewer',
-    'label' => 'Reviewer',
-    'required' => 0,
-    'settings' => array(
-      'linkit' => array(
-        'enable' => 0,
-        'insert_plugin' => '',
-      ),
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'maxlength_js' => 0,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 1,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-publication-field_academic_area_unlimited'
   $field_instances['node-publication-field_academic_area_unlimited'] = array(
     'bundle' => 'publication',
@@ -262,55 +136,32 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'addthis_button_widget',
-      'weight' => 24,
+      'weight' => 15,
     ),
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_body'
-  $field_instances['node-publication-field_body'] = array(
+  // Exported field_instance: 'node-publication-field_alumni_story'
+  $field_instances['node-publication-field_alumni_story'] = array(
     'bundle' => 'publication',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'business_insight' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 14,
-      ),
       'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
+        'label' => 'above',
+        'module' => 'list',
         'settings' => array(
           'conditions' => array(),
         ),
-        'type' => 'text_default',
-        'weight' => 7,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'list_default',
+        'weight' => 8,
       ),
       'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'text_default',
-        'weight' => 5,
-      ),
-      'tiny' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -319,29 +170,69 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'field_body',
-    'label' => 'Description',
+    'field_name' => 'field_alumni_story',
+    'label' => 'Alumni Mentioned',
     'required' => 0,
     'settings' => array(
-      'linkit' => array(
-        'enable' => 0,
-        'insert_plugin' => '',
-      ),
-      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'text',
+      'module' => 'options',
       'settings' => array(
-        'maxlength_js' => '',
-        'maxlength_js_enforce' => 0,
-        'maxlength_js_label' => '',
-        'maxlength_js_truncate_html' => 0,
-        'rows' => 5,
+        'display_label' => 1,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
-      'type' => 'text_textarea',
-      'weight' => 10,
+      'type' => 'options_onoff',
+      'weight' => 6,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-publication-field_authors'
+  $field_instances['node-publication-field_authors'] = array(
+    'bundle' => 'publication',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Add',
+          'conditions' => array(),
+          'delete' => 'Delete',
+          'description' => TRUE,
+          'edit' => 'Edit',
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 26,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_authors',
+    'label' => 'Authors',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'field_collection_embed',
+      'weight' => 2,
     ),
     'workbench_access_field' => 0,
   );
@@ -416,6 +307,49 @@ function gsb_feature_publication_ct_field_default_field_instances() {
       ),
       'type' => 'taxonomy_hs',
       'weight' => 17,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-publication-field_centers_research_programs'
+  $field_instances['node-publication-field_centers_research_programs'] = array(
+    'bundle' => 'publication',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 36,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_centers_research_programs',
+    'label' => 'Centers',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'options_select',
+      'weight' => 33,
     ),
     'workbench_access_field' => 0,
   );
@@ -496,156 +430,23 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_date_published'
-  $field_instances['node-publication-field_date_published'] = array(
-    'bundle' => 'publication',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'business_insight' => array(
-        'label' => 'hidden',
-        'module' => 'date',
-        'settings' => array(
-          'conditions' => array(),
-          'format_type' => 'year',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-          'show_repeat_rule' => 'show',
-        ),
-        'type' => 'date_default',
-        'weight' => 7,
-      ),
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'date',
-        'settings' => array(
-          'conditions' => array(),
-          'format_type' => 'long',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-          'show_repeat_rule' => 'show',
-        ),
-        'type' => 'date_default',
-        'weight' => 3,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'date',
-        'settings' => array(
-          'conditions' => array(),
-          'format_type' => 'medium',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-          'show_repeat_rule' => 'show',
-        ),
-        'type' => 'date_default',
-        'weight' => 1,
-      ),
-      'tiny' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_date_published',
-    'label' => 'Date Published',
-    'required' => 1,
-    'settings' => array(
-      'default_value' => 'now',
-      'default_value2' => 'same',
-      'default_value_code' => '',
-      'default_value_code2' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'date',
-      'settings' => array(
-        'display_all_day' => 0,
-        'increment' => 15,
-        'input_format' => 'Y-m-d H:i:s',
-        'input_format_custom' => '',
-        'label_position' => 'above',
-        'maxlength_js_label' => '',
-        'repeat_collapsed' => 0,
-        'text_parts' => array(),
-        'year_range' => '-3:+3',
-      ),
-      'type' => 'date_popup',
-      'weight' => 1,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-publication-field_discipline'
-  $field_instances['node-publication-field_discipline'] = array(
+  // Exported field_instance: 'node-publication-field_description'
+  $field_instances['node-publication-field_description'] = array(
     'bundle' => 'publication',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'business_insight' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 7,
-      ),
       'default' => array(
-        'label' => 'hidden',
-        'module' => 'ds',
+        'label' => 'above',
+        'module' => 'text',
         'settings' => array(
           'conditions' => array(),
-          'taxonomy_term_link' => TRUE,
-          'taxonomy_term_separator' => ', ',
         ),
-        'type' => 'ds_taxonomy_separator',
-        'weight' => 10,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 27,
       ),
       'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'ds',
-        'settings' => array(
-          'conditions' => array(),
-          'taxonomy_term_link' => TRUE,
-          'taxonomy_term_separator' => ', ',
-        ),
-        'type' => 'ds_taxonomy_separator',
-        'weight' => 19,
-      ),
-      'tiny' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -654,20 +455,29 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'field_discipline',
-    'label' => 'Discipline',
+    'field_name' => 'field_description',
+    'label' => 'Abstract',
     'required' => 0,
     'settings' => array(
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'hs_taxonomy',
+      'module' => 'text',
       'settings' => array(
-        'maxlength_js_label' => '',
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_truncate_html' => 0,
+        'rows' => 5,
       ),
-      'type' => 'taxonomy_hs',
-      'weight' => 18,
+      'type' => 'text_textarea',
+      'weight' => 12,
     ),
     'workbench_access_field' => 0,
   );
@@ -700,12 +510,12 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_file_single_public',
-    'label' => 'Sample File',
+    'label' => 'Publication PDF',
     'required' => 0,
     'settings' => array(
       'description_field' => 0,
-      'file_directory' => 'publication-sample',
-      'file_extensions' => 'txt pdf doc docx xls xlsx ppt pptx',
+      'file_directory' => 'publication-pdf',
+      'file_extensions' => 'pdf',
       'max_filesize' => '',
       'user_register_form' => FALSE,
     ),
@@ -717,63 +527,28 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 4,
+      'weight' => 12,
     ),
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_image_single_public'
-  $field_instances['node-publication-field_image_single_public'] = array(
+  // Exported field_instance: 'node-publication-field_first_name'
+  $field_instances['node-publication-field_first_name'] = array(
     'bundle' => 'publication',
+    'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Recommended size for uploaded images is 600x440.',
+    'description' => '',
     'display' => array(
-      'business_insight' => array(
-        'label' => 'hidden',
-        'module' => 'gsb_field_formatter',
-        'settings' => array(
-          'conditions' => array(),
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'gsb_field_formatter_image',
-        'weight' => 1,
-      ),
       'default' => array(
-        'label' => 'hidden',
-        'module' => 'gsb_field_formatter',
+        'label' => 'above',
+        'module' => 'text',
         'settings' => array(
           'conditions' => array(),
-          'image_link' => '',
-          'image_style' => '',
         ),
-        'type' => 'gsb_field_formatter_image',
-        'weight' => 0,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 4,
       ),
       'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'gsb_field_formatter',
-        'settings' => array(
-          'conditions' => array(),
-          'image_link' => 'content',
-          'image_style' => '170x170',
-        ),
-        'type' => 'gsb_field_formatter_image',
-        'weight' => 0,
-      ),
-      'tiny' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -782,30 +557,27 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'field_image_single_public',
-    'label' => 'Cover Image',
+    'field_name' => 'field_first_name',
+    'label' => 'First Name',
     'required' => 0,
     'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => 'publication_image',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'text',
       'settings' => array(
-        'maxlength_js_label' => '',
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
       ),
-      'type' => 'image_image',
-      'weight' => 3,
+      'type' => 'text_textfield',
+      'weight' => 12,
     ),
     'workbench_access_field' => 0,
   );
@@ -956,49 +728,28 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 9,
     ),
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_link_unlimited'
-  $field_instances['node-publication-field_link_unlimited'] = array(
+  // Exported field_instance: 'node-publication-field_last_name'
+  $field_instances['node-publication-field_last_name'] = array(
     'bundle' => 'publication',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'business_insight' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 18,
-      ),
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 16,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'text',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'text_default',
+        'weight' => 5,
       ),
       'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 18,
-      ),
-      'tiny' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -1007,88 +758,48 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'field_link_unlimited',
-    'label' => 'Related Links',
+    'field_name' => 'field_last_name',
+    'label' => 'Last Name',
     'required' => 0,
     'settings' => array(
-      'attributes' => array(
-        'class' => '',
-        'configurable_title' => 0,
-        'rel' => '',
-        'target' => 'default',
-        'title' => '',
-      ),
-      'display' => array(
-        'url_cutoff' => 80,
-      ),
-      'enable_tokens' => 1,
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
       ),
-      'title' => 'optional',
-      'title_maxlength' => 128,
-      'title_value' => '',
-      'url' => 0,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
-      'validate_url' => 1,
     ),
     'widget' => array(
-      'active' => 0,
-      'module' => 'link',
+      'active' => 1,
+      'module' => 'text',
       'settings' => array(
-        'maxlength_js_label' => '',
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
       ),
-      'type' => 'link_field',
-      'weight' => 12,
+      'type' => 'text_textfield',
+      'weight' => 14,
     ),
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_link_website'
-  $field_instances['node-publication-field_link_website'] = array(
+  // Exported field_instance: 'node-publication-field_link_single'
+  $field_instances['node-publication-field_link_single'] = array(
     'bundle' => 'publication',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'e.g. http://journals.ama.org/article',
     'display' => array(
-      'business_insight' => array(
-        'label' => 'hidden',
-        'module' => 'link',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'link_title_plain',
-        'weight' => 4,
-      ),
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'link',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'link_default',
-        'weight' => 4,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 15,
       ),
       'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 17,
-      ),
-      'tiny' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -1097,8 +808,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'field_link_website',
-    'label' => 'Publication',
+    'field_name' => 'field_link_single',
+    'label' => 'Publication Link',
     'required' => 0,
     'settings' => array(
       'attributes' => array(
@@ -1111,15 +822,16 @@ function gsb_feature_publication_ct_field_default_field_instances() {
       'display' => array(
         'url_cutoff' => 80,
       ),
-      'enable_tokens' => 1,
+      'enable_tokens' => 0,
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
       ),
-      'title' => 'optional',
+      'rel_remove' => 'default',
+      'title' => 'value',
       'title_maxlength' => 128,
-      'title_value' => '',
-      'url' => 'optional',
+      'title_value' => 'View Publication',
+      'url' => 0,
       'user_register_form' => FALSE,
       'validate_url' => 1,
     ),
@@ -1127,58 +839,31 @@ function gsb_feature_publication_ct_field_default_field_instances() {
       'active' => 0,
       'module' => 'link',
       'settings' => array(
-        'maxlength_js_label' => '',
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 5,
+      'weight' => 11,
     ),
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_pages'
-  $field_instances['node-publication-field_pages'] = array(
+  // Exported field_instance: 'node-publication-field_middle_name'
+  $field_instances['node-publication-field_middle_name'] = array(
     'bundle' => 'publication',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'business_insight' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'text_plain',
-        'weight' => 8,
-      ),
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 3,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 6,
       ),
       'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 15,
-      ),
-      'tiny' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -1187,7 +872,57 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'field_pages',
+    'field_name' => 'field_middle_name',
+    'label' => 'Middle Name',
+    'required' => 0,
+    'settings' => array(
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 13,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-publication-field_page_count'
+  $field_instances['node-publication-field_page_count'] = array(
+    'bundle' => 'publication',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_page_count',
     'label' => 'Pages',
     'required' => 0,
     'settings' => array(
@@ -1203,67 +938,32 @@ function gsb_feature_publication_ct_field_default_field_instances() {
       'module' => 'text',
       'settings' => array(
         'maxlength_js' => 0,
-        'maxlength_js_label' => '',
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 10,
     ),
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_person_other'
-  $field_instances['node-publication-field_person_other'] = array(
+  // Exported field_instance: 'node-publication-field_place_of_publication'
+  $field_instances['node-publication-field_place_of_publication'] = array(
     'bundle' => 'publication',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'For book chapters only. Enter the city. | e.g. New York',
     'display' => array(
-      'business_insight' => array(
-        'label' => 'hidden',
-        'module' => 'field_collection',
-        'settings' => array(
-          'conditions' => array(),
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_fields',
-        'weight' => 0,
-      ),
       'default' => array(
-        'label' => 'inline',
-        'module' => 'gsb_field_formatter',
+        'label' => 'above',
+        'module' => 'text',
         'settings' => array(
           'conditions' => array(),
-          'separator' => ', ',
-          'view_mode' => 'full',
         ),
-        'type' => 'gsb_field_formatter_field_collection_separator',
-        'weight' => 2,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 17,
       ),
       'teaser' => array(
-        'label' => 'inline',
-        'module' => 'gsb_field_formatter',
-        'settings' => array(
-          'conditions' => array(),
-          'separator' => ', ',
-          'view_mode' => 'full',
-        ),
-        'type' => 'gsb_field_formatter_field_collection_separator',
-        'weight' => 3,
-      ),
-      'tiny' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -1272,66 +972,48 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'field_person_other',
-    'label' => 'Authors',
-    'required' => 1,
+    'field_name' => 'field_place_of_publication',
+    'label' => 'Place of publication',
+    'required' => 0,
     'settings' => array(
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 0,
-      'module' => 'field_collection',
+      'active' => 1,
+      'module' => 'text',
       'settings' => array(
-        'maxlength_js_label' => '',
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
       ),
-      'type' => 'field_collection_embed',
-      'weight' => 2,
+      'type' => 'text_textfield',
+      'weight' => 4,
     ),
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_publication_reviews'
-  $field_instances['node-publication-field_publication_reviews'] = array(
+  // Exported field_instance: 'node-publication-field_program_single'
+  $field_instances['node-publication-field_program_single'] = array(
     'bundle' => 'publication',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'business_insight' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 16,
-      ),
       'default' => array(
         'label' => 'above',
-        'module' => 'field_collection',
+        'module' => 'taxonomy',
         'settings' => array(
           'conditions' => array(),
-          'view_mode' => 'full',
         ),
-        'type' => 'field_collection_fields',
-        'weight' => 8,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 37,
       ),
       'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 13,
-      ),
-      'tiny' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -1340,20 +1022,120 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'field_publication_reviews',
-    'label' => 'Selected Reviews',
+    'field_name' => 'field_program_single',
+    'label' => 'Alumni Degree/Program',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 0,
-      'module' => 'field_collection',
+      'active' => 1,
+      'module' => 'options',
       'settings' => array(
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
-      'type' => 'field_collection_embed',
-      'weight' => 11,
+      'type' => 'options_select',
+      'weight' => 16,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-publication-field_pub_book_title'
+  $field_instances['node-publication-field_pub_book_title'] = array(
+    'bundle' => 'publication',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Use the journal\'s formal name in title case. | e.g. Journal of Marketing Research',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'text_default',
+        'weight' => 33,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_pub_book_title',
+    'label' => 'Source Publication / Book Title',
+    'required' => 1,
+    'settings' => array(
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 3,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-publication-field_pub_month_day'
+  $field_instances['node-publication-field_pub_month_day'] = array(
+    'bundle' => 'publication',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Input the rest of the date without year. <em>Example: May 12; April; Summer.</em>',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'text_default',
+        'weight' => 35,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_pub_month_day',
+    'label' => 'Publication Month/Day',
+    'required' => 0,
+    'settings' => array(
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 37,
     ),
     'workbench_access_field' => 0,
   );
@@ -1363,7 +1145,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'bundle' => 'publication',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'For book chapters only. | e.g. Broadway Books',
     'display' => array(
       'business_insight' => array(
         'label' => 'hidden',
@@ -1397,12 +1179,12 @@ function gsb_feature_publication_ct_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'gsb_feature_research_paper_display',
+        'module' => 'text',
         'settings' => array(
           'conditions' => array(),
           'view_mode' => 'research_pager',
         ),
-        'type' => 'gsb_research_papers_formatter',
+        'type' => 'text_default',
         'weight' => 4,
       ),
       'tiny' => array(
@@ -1434,7 +1216,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 9,
+      'weight' => 5,
     ),
     'workbench_access_field' => 0,
   );
@@ -1513,6 +1295,56 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-publication-field_salutation'
+  $field_instances['node-publication-field_salutation'] = array(
+    'bundle' => 'publication',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_salutation',
+    'label' => 'Salutation',
+    'required' => 0,
+    'settings' => array(
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 11,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-publication-field_search_field'
   $field_instances['node-publication-field_search_field'] = array(
     'bundle' => 'publication',
@@ -1580,7 +1412,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'concat_field_default',
-      'weight' => 26,
+      'weight' => 18,
     ),
     'workbench_access_field' => 0,
   );
@@ -1642,7 +1474,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_tag',
-    'label' => 'Tag',
+    'label' => 'Tags',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1656,81 +1488,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 23,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-publication-field_target_audience'
-  $field_instances['node-publication-field_target_audience'] = array(
-    'bundle' => 'publication',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'business_insight' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 6,
-      ),
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'ds',
-        'settings' => array(
-          'conditions' => array(),
-          'taxonomy_term_link' => TRUE,
-          'taxonomy_term_separator' => ', ',
-        ),
-        'type' => 'ds_taxonomy_separator',
-        'weight' => 9,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'ds',
-        'settings' => array(
-          'conditions' => array(),
-          'taxonomy_term_link' => TRUE,
-          'taxonomy_term_separator' => ', ',
-        ),
-        'type' => 'ds_taxonomy_separator',
-        'weight' => 18,
-      ),
-      'tiny' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_target_audience',
-    'label' => 'Target Audience',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'hs_taxonomy',
-      'settings' => array(
-        'maxlength_js_label' => '',
-      ),
-      'type' => 'taxonomy_hs',
-      'weight' => 21,
+      'weight' => 34,
     ),
     'workbench_access_field' => 0,
   );
@@ -1807,38 +1565,166 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 8,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-publication-field_year'
+  $field_instances['node-publication-field_year'] = array(
+    'bundle' => 'publication',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'conditions' => array(),
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_repeat_rule' => 'show',
+        ),
+        'type' => 'date_default',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_year',
+    'label' => 'Alumni Degree Year',
+    'required' => 0,
+    'settings' => array(
+      'default_value' => 'now',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'display_all_day' => 0,
+        'increment' => 15,
+        'input_format' => 'Y-m-d H:i:s',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'repeat_collapsed' => 0,
+        'text_parts' => array(),
+        'year_range' => '-3:+3',
+      ),
+      'type' => 'date_text',
+      'weight' => 15,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-publication-field_year_of_publication'
+  $field_instances['node-publication-field_year_of_publication'] = array(
+    'bundle' => 'publication',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'conditions' => array(),
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_repeat_rule' => 'show',
+        ),
+        'type' => 'date_default',
+        'weight' => 34,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_year_of_publication',
+    'label' => 'Publication year',
+    'required' => 1,
+    'settings' => array(
+      'default_value' => 'now',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'display_all_day' => 0,
+        'increment' => 15,
+        'input_format' => 'Y-m-d H:i:s',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'repeat_collapsed' => 0,
+        'text_parts' => array(),
+        'year_range' => '-3:+3',
+      ),
+      'type' => 'date_text',
+      'weight' => 36,
     ),
     'workbench_access_field' => 0,
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Abstract');
   t('Academic Area');
   t('AddThis');
+  t('Alumni Degree Year');
+  t('Alumni Degree/Program');
+  t('Alumni Mentioned');
   t('Authors');
   t('Business Insight Topic');
+  t('Centers');
   t('Company Organization');
-  t('Cover Image');
-  t('Date Published');
-  t('Description');
-  t('Discipline');
+  t('First Name');
+  t('For book chapters only. Enter the city. | e.g. New York');
+  t('For book chapters only. | e.g. Broadway Books');
   t('Industry');
+  t('Input the rest of the date without year. <em>Example: May 12; April; Summer.</em>');
   t('Issue Number');
+  t('Last Name');
+  t('Middle Name');
   t('Pages');
-  t('Publication');
+  t('Place of publication');
+  t('Publication Link');
+  t('Publication Month/Day');
+  t('Publication PDF');
+  t('Publication year');
   t('Publisher');
-  t('Recommended size for uploaded images is 600x440.');
   t('Region');
-  t('Related Links');
-  t('Review Text');
-  t('Reviewer');
-  t('Sample File');
+  t('Salutation');
   t('Search field');
-  t('Selected Reviews');
-  t('Tag');
-  t('Target Audience');
+  t('Source Publication / Book Title');
+  t('Tags');
+  t('Use the journal\'s formal name in title case. | e.g. Journal of Marketing Research');
   t('Volume Number');
+  t('e.g. http://journals.ama.org/article');
 
   return $field_instances;
 }
