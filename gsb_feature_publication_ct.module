@@ -6,47 +6,107 @@
 
 include_once 'gsb_feature_publication_ct.features.inc';
 
+
 /**
  * Implements hook_form_FORM_ID_alter() for publication node edit form.
  */
 function gsb_feature_publication_ct_form_publication_node_form_alter(&$form, &$form_state) {
-
   $language = $form['language']['#value'];
 
-  if (!empty($form['field_person_other'][$language])) {
-
-    foreach ($form['field_person_other'][$language] as $index => $data) {
-
+  if (!empty($form['field_authors'][$language])) {
+    foreach (element_children($form['field_authors'][$language]) as $index) {
       if (is_integer($index)) {
 
-        $form['field_person_other'][$language][$index]['field_person_ref']['#states'] = array(
+        $form['field_authors'][$language][$index]['field_person_fac_single_ref']['#states'] = array(
           'visible' => array(
-            ':input[name="field_person_other[' . $language . '][' . $index . '][field_person_or_other][' . $language . ']"]' => array(
+            ':input[name="field_authors[' . $language . '][' . $index . '][field_person_fac_or_other][' . $language . ']"]' => array(
               array('value' => 'UseEntityReference'),
             ),
           ),
         );
 
-        $form['field_person_other'][$language][$index]['field_first_name']['#states'] = array(
+        $form['field_authors'][$language][$index]['field_first_name']['#states'] = array(
           'visible' => array(
-            ':input[name="field_person_other[' . $language . '][' . $index . '][field_person_or_other][' . $language . ']"]' => array(
+            ':input[name="field_authors[' . $language . '][' . $index . '][field_person_fac_or_other][' . $language . ']"]' => array(
               array('value' => 'Other'),
             ),
           ),
         );
 
-        $form['field_person_other'][$language][$index]['field_last_name']['#states'] = array(
+        $form['field_authors'][$language][$index]['field_last_name']['#states'] = array(
           'visible' => array(
-            ':input[name="field_person_other[' . $language . '][' . $index . '][field_person_or_other][' . $language . ']"]' => array(
+            ':input[name="field_authors[' . $language . '][' . $index . '][field_person_fac_or_other][' . $language . ']"]' => array(
               array('value' => 'Other'),
             ),
           ),
         );
 
+        // remove "n/a" as an option for the fac_or_other
+        unset($form['field_authors'][$language][$index]['field_person_fac_or_other'][$language]['#options']['_none']);
       }
     }
   }
+
+  // Prepare a state that will be used to mark required alumni story fields.
+  $required_if_alumni_story_states = array(
+    'optional' => array(
+      ':input[name="field_alumni_story[' . $language . ']"]' => array(
+        array('checked' => FALSE),
+      ),
+    ),
+  );
+
+  // Use States API to conditionally mark fields as required.
+  // Note: this will not actually validate fields, it's only for UI.
+  if (!empty($form['field_first_name'][$language])) {
+    $form['field_first_name'][$language][0]['value']['#states'] = $required_if_alumni_story_states;
+  }
+
+  if (!empty($form['field_last_name'][$language])) {
+    $form['field_last_name'][$language][0]['value']['#states'] = $required_if_alumni_story_states;
+  }
+
+  if (!empty($form['field_program_single'][$language])) {
+    $form['field_program_single'][$language]['#states'] = $required_if_alumni_story_states;
+  }
+
+  if (!empty($form['field_year'][$language])) {
+    $form['field_year'][$language]['#states'] = $required_if_alumni_story_states;
+  }
+
+  // Perform additional validation.
+  $form['#validate'][] = 'gsb_feature_publication_ct_publication_node_form_validate';
 }
 
+/**
+ * Validate callback for publication_node_form.
+ *  - Conditionally validate alumni story fields.
+ */
+function gsb_feature_publication_ct_publication_node_form_validate($form, &$form_state) {
+  $language = $form['language']['#value'];
+  $values = $form_state['values'];
 
+  // If Book is an alumni story we need to manually validate some required fields.
+  if ($values['field_alumni_story'][$language][0]['value'] == TRUE) {
 
+    // Validate first and last name.
+    if (empty($values['field_first_name'][$language][0]['value'])) {
+      $field_label = $form['field_first_name'][$language][0]['#title'];
+      form_set_error('field_first_name][und][0][value', $field_label . ' field is required.');
+    }
+    if (empty($values['field_last_name'][$language][0]['value'])) {
+      $field_label = $form['field_last_name'][$language][0]['#title'];
+      form_set_error('field_last_name][und][0][value', $field_label . ' field is required.');
+    }
+
+    if (empty($values['field_program_single'][$language][0]['tid'])) {
+      $field_label = $form['field_program_single'][$language]['#title'];
+      form_set_error('field_program_single][und][0][tid', $field_label . ' field is required.');
+    }
+
+    if (empty($values['field_year'][$language][0]['value'])) {
+      $field_label = $form['field_year'][$language]['#title'];
+      form_set_error('field_year][und][0][value', $field_label . ' field is required.');
+    }
+  }
+}
