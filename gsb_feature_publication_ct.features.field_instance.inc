@@ -79,7 +79,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 16,
+      'weight' => 18,
     ),
     'workbench_access_field' => 0,
   );
@@ -136,7 +136,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'addthis_button_widget',
-      'weight' => 15,
+      'weight' => 12,
     ),
     'workbench_access_field' => 0,
   );
@@ -349,7 +349,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 33,
+      'weight' => 23,
     ),
     'workbench_access_field' => 0,
   );
@@ -425,7 +425,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 22,
+      'weight' => 21,
     ),
     'workbench_access_field' => 0,
   );
@@ -477,7 +477,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 12,
+      'weight' => 9,
     ),
     'workbench_access_field' => 0,
   );
@@ -651,7 +651,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 19,
+      'weight' => 20,
     ),
     'workbench_access_field' => 0,
   );
@@ -1035,7 +1035,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 16,
+      'weight' => 9,
     ),
     'workbench_access_field' => 0,
   );
@@ -1090,21 +1090,25 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_pub_month_day'
-  $field_instances['node-publication-field_pub_month_day'] = array(
+  // Exported field_instance: 'node-publication-field_pub_date_day'
+  $field_instances['node-publication-field_pub_date_day'] = array(
     'bundle' => 'publication',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Input the rest of the date without year. <em>Example: May 12; April; Summer.</em>',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
+        'module' => 'number',
         'settings' => array(
           'conditions' => array(),
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
         ),
-        'type' => 'text_default',
-        'weight' => 35,
+        'type' => 'number_integer',
+        'weight' => 38,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1115,26 +1119,74 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'field_pub_month_day',
-    'label' => 'Publication Month/Day',
+    'field_name' => 'field_pub_date_day',
+    'label' => 'Publication Day',
     'required' => 0,
     'settings' => array(
-      'linkit' => array(
-        'enable' => 0,
-        'insert_plugin' => '',
-      ),
-      'text_processing' => 0,
+      'max' => 31,
+      'min' => 1,
+      'prefix' => '',
+      'suffix' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'text',
+      'active' => 0,
+      'module' => 'number',
       'settings' => array(
-        'maxlength_js' => 0,
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'size' => 60,
       ),
-      'type' => 'text_textfield',
+      'type' => 'number',
+      'weight' => 38,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-publication-field_pub_date_month'
+  $field_instances['node-publication-field_pub_date_month'] = array(
+    'bundle' => 'publication',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Enter numeric equivalent for desired month.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'conditions' => array(),
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 39,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_pub_date_month',
+    'label' => 'Publication Month',
+    'required' => 0,
+    'settings' => array(
+      'max' => 12,
+      'min' => 1,
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'number',
       'weight' => 37,
     ),
     'workbench_access_field' => 0,
@@ -1290,7 +1342,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 20,
+      'weight' => 19,
     ),
     'workbench_access_field' => 0,
   );
@@ -1412,7 +1464,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'concat_field_default',
-      'weight' => 18,
+      'weight' => 15,
     ),
     'workbench_access_field' => 0,
   );
@@ -1488,7 +1540,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 34,
+      'weight' => 22,
     ),
     'workbench_access_field' => 0,
   );
@@ -1625,7 +1677,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_text',
-      'weight' => 15,
+      'weight' => 8,
     ),
     'workbench_access_field' => 0,
   );
@@ -1702,18 +1754,19 @@ function gsb_feature_publication_ct_field_default_field_instances() {
   t('Business Insight Topic');
   t('Centers');
   t('Company Organization');
+  t('Enter numeric equivalent for desired month.');
   t('First Name');
   t('For book chapters only. Enter the city. | e.g. New York');
   t('For book chapters only. | e.g. Broadway Books');
   t('Industry');
-  t('Input the rest of the date without year. <em>Example: May 12; April; Summer.</em>');
   t('Issue Number');
   t('Last Name');
   t('Middle Name');
   t('Pages');
   t('Place of publication');
+  t('Publication Day');
   t('Publication Link');
-  t('Publication Month/Day');
+  t('Publication Month');
   t('Publication PDF');
   t('Publication year');
   t('Publisher');
