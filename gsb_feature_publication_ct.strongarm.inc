@@ -19,13 +19,13 @@ function gsb_feature_publication_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '17',
+          'weight' => '14',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '16',
+          'weight' => '13',
         ),
         'workbench_access' => array(
           'weight' => '1',
