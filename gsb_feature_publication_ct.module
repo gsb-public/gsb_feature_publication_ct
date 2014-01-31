@@ -136,3 +136,12 @@ function gsb_feature_publication_ct_publication_node_form_validate($form, &$form
     }
   }
 }
+
+/**
+ * Implements hook_gsb_feature_base_fields_faculty_author_types().
+ */
+function gsb_feature_publication_ct_gsb_feature_base_fields_faculty_author_types() {
+  return array(
+    'publication',
+  );
+}
