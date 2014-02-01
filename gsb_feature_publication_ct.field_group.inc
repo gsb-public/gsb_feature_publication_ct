@@ -139,12 +139,17 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Publication details',
-    'weight' => '4',
+    'weight' => '2',
     'children' => array(
       0 => 'field_issue_number',
-      1 => 'field_link_website',
-      2 => 'field_pages',
-      3 => 'field_volume_number',
+      1 => 'field_page_count',
+      2 => 'field_place_of_publication',
+      3 => 'field_pub_book_title',
+      4 => 'field_pub_date_day',
+      5 => 'field_pub_date_month',
+      6 => 'field_publisher',
+      7 => 'field_volume_number',
+      8 => 'field_year_of_publication',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -171,25 +176,86 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->bundle = 'publication';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
+  $field_group->data = '';
+  $export['group_publication_details|node|publication|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_publication_details|node|publication|teaser_listing';
+  $field_group->group_name = 'group_publication_details';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'publication';
+  $field_group->mode = 'teaser_listing';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Publication details',
-    'weight' => '7',
+    'weight' => '2',
     'children' => array(
       0 => 'field_issue_number',
       1 => 'field_page_count',
-      2 => 'field_volume_number',
+      2 => 'field_place_of_publication',
+      3 => 'field_pub_book_title',
+      4 => 'field_pub_date_day',
+      5 => 'field_pub_date_month',
+      6 => 'field_publisher',
+      7 => 'field_volume_number',
+      8 => 'field_year_of_publication',
     ),
-    'format_type' => 'fieldset',
+    'format_type' => 'div',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'label' => 'Publication details',
       'instance_settings' => array(
-        'description' => '',
         'classes' => '',
-        'required_fields' => 1,
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
       ),
+      'formatter' => 'open',
     ),
   );
-  $export['group_publication_details|node|publication|form'] = $field_group;
+  $export['group_publication_details|node|publication|teaser_listing'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_publication_details|node|publication|views_content_pane';
+  $field_group->group_name = 'group_publication_details';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'publication';
+  $field_group->mode = 'views_content_pane';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Publication details',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_issue_number',
+      1 => 'field_page_count',
+      2 => 'field_place_of_publication',
+      3 => 'field_pub_book_title',
+      4 => 'field_pub_date_day',
+      5 => 'field_pub_date_month',
+      6 => 'field_publisher',
+      7 => 'field_volume_number',
+      8 => 'field_year_of_publication',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Publication details',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_publication_details|node|publication|views_content_pane'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -200,29 +266,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->bundle = 'publication';
   $field_group->mode = 'business_insight';
   $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Tags:',
-    'weight' => '15',
-    'children' => array(
-      0 => 'field_academic_area_unlimited',
-      1 => 'field_business_insight_topic',
-      2 => 'field_company_organization',
-      3 => 'field_discipline',
-      4 => 'field_industry',
-      5 => 'field_region',
-      6 => 'field_tag',
-      7 => 'field_target_audience',
-    ),
-    'format_type' => 'gsb_field_formatter_group_comma_separator',
-    'format_settings' => array(
-      'formatter' => 'open',
-      'instance_settings' => array(
-        'show_label' => 1,
-        'label_element' => 'h3',
-        'classes' => '',
-      ),
-    ),
-  );
+  $field_group->data = '';
   $export['group_tags_wrapper|node|publication|business_insight'] = $field_group;
 
   $field_group = new stdClass();
@@ -236,16 +280,10 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags:',
-    'weight' => '6',
+    'weight' => '3',
     'children' => array(
       0 => 'field_academic_area_unlimited',
       1 => 'field_business_insight_topic',
-      2 => 'field_company_organization',
-      3 => 'field_discipline',
-      4 => 'field_industry',
-      5 => 'field_region',
-      6 => 'field_tag',
-      7 => 'field_target_audience',
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
@@ -271,16 +309,14 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags:',
-    'weight' => '6',
+    'weight' => '27',
     'children' => array(
       0 => 'field_academic_area_unlimited',
       1 => 'field_business_insight_topic',
       2 => 'field_company_organization',
-      3 => 'field_discipline',
-      4 => 'field_industry',
-      5 => 'field_region',
-      6 => 'field_tag',
-      7 => 'field_target_audience',
+      3 => 'field_industry',
+      4 => 'field_region',
+      5 => 'field_tag',
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
@@ -337,28 +373,36 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->bundle = 'field_person_other';
   $field_group->mode = 'default';
   $field_group->parent_name = '';
+  $field_group->data = '';
+  $export['group_wrapper_name|field_collection_item|field_person_other|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_topics|node|publication|teaser_listing';
+  $field_group->group_name = 'group_wrapper_topics';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'publication';
+  $field_group->mode = 'teaser_listing';
+  $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Name wrapper',
-    'weight' => '0',
+    'label' => 'Topics',
+    'weight' => '12',
     'children' => array(
-      0 => 'field_first_name',
-      1 => 'field_last_name',
+      0 => 'field_academic_area_unlimited',
+      1 => 'field_business_insight_topic',
     ),
-    'format_type' => 'div',
+    'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
-      'label' => 'Name wrapper',
-      'instance_settings' => array(
-        'classes' => '',
-        'description' => '',
-        'show_label' => '0',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'none',
-      ),
       'formatter' => 'open',
+      'instance_settings' => array(
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'classes' => '',
+      ),
     ),
   );
-  $export['group_wrapper_name|field_collection_item|field_person_other|default'] = $field_group;
+  $export['group_wrapper_topics|node|publication|teaser_listing'] = $field_group;
 
   return $export;
 }
