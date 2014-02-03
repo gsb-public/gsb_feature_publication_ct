@@ -1329,7 +1329,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'decimal_separator' => '.',
-          'prefix_suffix' => 1,
+          'prefix_suffix' => 0,
           'scale' => 0,
           'thousand_separator' => '',
         ),
@@ -1361,7 +1361,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'decimal_separator' => '.',
-          'prefix_suffix' => 1,
+          'prefix_suffix' => 0,
           'scale' => 0,
           'thousand_separator' => '',
         ),
@@ -1402,15 +1402,11 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'number',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
-          'decimal_separator' => '.',
-          'prefix_suffix' => 0,
-          'scale' => 0,
-          'thousand_separator' => '',
         ),
-        'type' => 'number_integer',
+        'type' => 'gsb_field_formatter_month',
         'weight' => 11,
       ),
       'teaser' => array(
@@ -1434,15 +1430,11 @@ function gsb_feature_publication_ct_field_default_field_instances() {
       ),
       'views_content_pane' => array(
         'label' => 'hidden',
-        'module' => 'number',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
-          'decimal_separator' => '.',
-          'prefix_suffix' => 0,
-          'scale' => 0,
-          'thousand_separator' => '',
         ),
-        'type' => 'number_integer',
+        'type' => 'gsb_field_formatter_month',
         'weight' => 6,
       ),
     ),

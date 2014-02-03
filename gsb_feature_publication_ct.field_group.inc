@@ -281,10 +281,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->data = array(
     'label' => 'Tags:',
     'weight' => '3',
-    'children' => array(
-      0 => 'field_academic_area_unlimited',
-      1 => 'field_business_insight_topic',
-    ),
+    'children' => array(),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
       'label' => 'Tags:',
