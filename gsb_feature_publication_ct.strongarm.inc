@@ -80,7 +80,14 @@ function gsb_feature_publication_ct_strongarm() {
           'weight' => '1',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'gsb_feature_base_fields_faculty_authors' => array(
+          'default' => array(
+            'weight' => '7',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__publication'] = $strongarm;
