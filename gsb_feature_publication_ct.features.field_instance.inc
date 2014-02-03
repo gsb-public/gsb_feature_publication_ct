@@ -223,12 +223,12 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'inline',
         'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
           'separator' => ', ',
-          'view_mode' => 'existing_node_teaser',
+          'view_mode' => 'full',
         ),
         'type' => 'gsb_field_formatter_field_collection_separator',
         'weight' => 1,
