@@ -86,6 +86,10 @@ function gsb_feature_publication_ct_strongarm() {
             'weight' => '8',
             'visible' => TRUE,
           ),
+          'views_content_pane' => array(
+            'weight' => '0',
+            'visible' => FALSE,
+          ),
         ),
       ),
     ),
