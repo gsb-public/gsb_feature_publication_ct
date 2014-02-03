@@ -83,7 +83,7 @@ function gsb_feature_publication_ct_strongarm() {
       'display' => array(
         'gsb_feature_base_fields_faculty_authors' => array(
           'default' => array(
-            'weight' => '9',
+            'weight' => '8',
             'visible' => TRUE,
           ),
         ),
