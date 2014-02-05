@@ -176,7 +176,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->bundle = 'publication';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
-  $field_group->data = '';
+  $field_group->data = array();
   $export['group_publication_details|node|publication|form'] = $field_group;
 
   $field_group = new stdClass();
@@ -266,7 +266,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->bundle = 'publication';
   $field_group->mode = 'business_insight';
   $field_group->parent_name = '';
-  $field_group->data = '';
+  $field_group->data = array();
   $export['group_tags_wrapper|node|publication|business_insight'] = $field_group;
 
   $field_group = new stdClass();
@@ -402,7 +402,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->bundle = 'field_person_other';
   $field_group->mode = 'default';
   $field_group->parent_name = '';
-  $field_group->data = '';
+  $field_group->data = array();
   $export['group_wrapper_name|field_collection_item|field_person_other|default'] = $field_group;
 
   $field_group = new stdClass();
