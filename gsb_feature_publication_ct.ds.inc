@@ -348,6 +348,12 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
         'class' => '',
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
         ),
         'conditions' => array(),
       ),
@@ -377,7 +383,7 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'suffix' => ', ',
+          'prefix' => ', ',
         ),
       ),
     ),
@@ -385,7 +391,7 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'suffix' => '.',
+          'prefix' => ', ',
         ),
       ),
     ),
@@ -393,7 +399,8 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'suffix' => ': ',
+          'prefix' => ' ',
+          'suffix' => ':',
         ),
       ),
     ),
@@ -401,7 +408,8 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'suffix' => '. ',
+          'prefix' => ' ',
+          'suffix' => '.',
           'ow' => TRUE,
           'ow-el' => 'em',
           'ow-cl' => '',
@@ -411,11 +419,29 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_pub_date_day' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'prefix' => ' ',
+          'suffix' => ',',
+        ),
+      ),
+    ),
+    'field_pub_date_month' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'prefix' => ' ',
+        ),
+      ),
+    ),
     'field_publisher' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'suffix' => ', ',
+          'prefix' => ' ',
+          'suffix' => ',',
         ),
       ),
     ),
@@ -423,7 +449,7 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'suffix' => ', ',
+          'prefix' => ', ',
         ),
       ),
     ),
@@ -431,7 +457,7 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'suffix' => ', ',
+          'prefix' => ' ',
         ),
       ),
     ),
