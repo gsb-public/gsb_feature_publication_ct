@@ -255,7 +255,6 @@ function gsb_feature_publication_ct_field_group_info() {
       7 => 'field_publisher',
       8 => 'field_volume_number',
       9 => 'field_year_of_publication',
-      10 => 'group_publication_details',
     ),
     'format_type' => 'div',
     'format_settings' => array(
