@@ -68,26 +68,33 @@ function gsb_feature_publication_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '14',
+          'weight' => '17',
         ),
         'title' => array(
-          'weight' => '0',
+          'weight' => '8',
         ),
         'path' => array(
-          'weight' => '13',
+          'weight' => '16',
         ),
         'workbench_access' => array(
-          'weight' => '1',
+          'weight' => '9',
+        ),
+        'redirect' => array(
+          'weight' => '19',
         ),
       ),
       'display' => array(
         'gsb_feature_base_fields_faculty_authors' => array(
           'default' => array(
-            'weight' => '8',
+            'weight' => '15',
             'visible' => TRUE,
           ),
           'views_content_pane' => array(
             'weight' => '8',
+            'visible' => FALSE,
+          ),
+          'teaser_listing' => array(
+            'weight' => '18',
             'visible' => FALSE,
           ),
         ),

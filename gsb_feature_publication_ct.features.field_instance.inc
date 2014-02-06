@@ -117,7 +117,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 30,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -129,7 +129,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 29,
+        'weight' => 30,
       ),
       'views_content_pane' => array(
         'label' => 'hidden',
@@ -153,7 +153,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'addthis_button_widget',
-      'weight' => 12,
+      'weight' => 15,
     ),
     'workbench_access_field' => 0,
   );
@@ -173,7 +173,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 29,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -185,7 +185,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 28,
+        'weight' => 29,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -281,7 +281,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 2,
+      'weight' => 10,
     ),
     'workbench_access_field' => 0,
   );
@@ -387,7 +387,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 28,
+        'weight' => 36,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -399,7 +399,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 35,
+        'weight' => 36,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -445,7 +445,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 32,
       ),
       'featured' => array(
         'label' => 'above',
@@ -469,7 +469,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 31,
+        'weight' => 32,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -520,7 +520,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -532,7 +532,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 23,
       ),
       'views_content_pane' => array(
         'label' => 'hidden',
@@ -565,7 +565,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 9,
+      'weight' => 12,
     ),
     'workbench_access_field' => 0,
   );
@@ -602,7 +602,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 22,
       ),
       'views_content_pane' => array(
         'label' => 'hidden',
@@ -647,7 +647,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 25,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -659,7 +659,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 25,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -712,7 +712,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 33,
       ),
       'featured' => array(
         'label' => 'above',
@@ -736,7 +736,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 32,
+        'weight' => 33,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -794,7 +794,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 15,
+        'weight' => 9,
       ),
       'featured' => array(
         'label' => 'above',
@@ -821,7 +821,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 10,
+        'weight' => 9,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -861,7 +861,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 9,
+      'weight' => 5,
     ),
     'workbench_access_field' => 0,
   );
@@ -877,7 +877,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 18,
+        'weight' => 26,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -889,7 +889,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 26,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -951,7 +951,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 21,
       ),
       'views_content_pane' => array(
         'label' => 'hidden',
@@ -1012,7 +1012,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 27,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1024,7 +1024,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 27,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -1074,7 +1074,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 16,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1089,7 +1089,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 11,
+        'weight' => 10,
       ),
       'views_content_pane' => array(
         'label' => 'hidden',
@@ -1123,7 +1123,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 10,
+      'weight' => 6,
     ),
     'workbench_access_field' => 0,
   );
@@ -1142,7 +1142,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 9,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1157,7 +1157,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'views_content_pane' => array(
         'label' => 'hidden',
@@ -1191,7 +1191,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 1,
     ),
     'workbench_access_field' => 0,
   );
@@ -1207,7 +1207,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 29,
+        'weight' => 37,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1219,7 +1219,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 36,
+        'weight' => 37,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -1243,7 +1243,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 9,
+      'weight' => 10,
     ),
     'workbench_access_field' => 0,
   );
@@ -1262,7 +1262,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1277,7 +1277,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'views_content_pane' => array(
         'label' => 'hidden',
@@ -1311,7 +1311,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 0,
     ),
     'workbench_access_field' => 0,
   );
@@ -1334,7 +1334,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 12,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1353,7 +1353,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 7,
+        'weight' => 6,
       ),
       'views_content_pane' => array(
         'label' => 'hidden',
@@ -1388,7 +1388,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'number',
-      'weight' => 38,
+      'weight' => 39,
     ),
     'workbench_access_field' => 0,
   );
@@ -1407,7 +1407,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'gsb_field_formatter_month',
-        'weight' => 11,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1422,7 +1422,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'gsb_field_formatter_month',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'views_content_pane' => array(
         'label' => 'hidden',
@@ -1481,7 +1481,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 10,
+        'weight' => 4,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1508,7 +1508,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -1548,7 +1548,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 2,
     ),
     'workbench_access_field' => 0,
   );
@@ -1570,7 +1570,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 31,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1594,7 +1594,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 30,
+        'weight' => 31,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -1640,7 +1640,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 28,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1652,7 +1652,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 28,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -1704,7 +1704,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 35,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1716,7 +1716,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 34,
+        'weight' => 35,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -1764,7 +1764,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'concat_field_default',
-      'weight' => 15,
+      'weight' => 18,
     ),
     'workbench_access_field' => 0,
   );
@@ -1786,7 +1786,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 34,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1810,7 +1810,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 33,
+        'weight' => 34,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -1870,7 +1870,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 14,
+        'weight' => 8,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1897,7 +1897,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 9,
+        'weight' => 8,
       ),
       'tiny' => array(
         'label' => 'above',
@@ -1937,7 +1937,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 4,
     ),
     'workbench_access_field' => 0,
   );
@@ -1952,7 +1952,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 16,
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1964,7 +1964,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 24,
       ),
       'views_content_pane' => array(
         'label' => 'above',
@@ -2000,7 +2000,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_text',
-      'weight' => 8,
+      'weight' => 9,
     ),
     'workbench_access_field' => 0,
   );
@@ -2024,7 +2024,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 13,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2045,7 +2045,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 8,
+        'weight' => 7,
       ),
       'views_content_pane' => array(
         'label' => 'hidden',
