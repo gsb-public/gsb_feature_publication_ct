@@ -246,15 +246,7 @@ function gsb_feature_publication_ct_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'field_authors',
-      1 => 'field_issue_number',
-      2 => 'field_page_count',
-      3 => 'field_place_of_publication',
-      4 => 'field_pub_book_title',
-      5 => 'field_pub_date_day',
-      6 => 'field_pub_date_month',
-      7 => 'field_publisher',
-      8 => 'field_volume_number',
-      9 => 'field_year_of_publication',
+      1 => 'group_wrapper_published',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -315,6 +307,123 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array();
   $export['group_wrapper_name|field_collection_item|field_person_other|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_published|node|publication|default';
+  $field_group->group_name = 'group_wrapper_published';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'publication';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Published info',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_issue_number',
+      1 => 'field_page_count',
+      2 => 'field_place_of_publication',
+      3 => 'field_pub_book_title',
+      4 => 'field_pub_date_day',
+      5 => 'field_pub_date_month',
+      6 => 'field_publisher',
+      7 => 'field_volume_number',
+      8 => 'field_year_of_publication',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Published info',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_wrapper_published|node|publication|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_published|node|publication|teaser_listing';
+  $field_group->group_name = 'group_wrapper_published';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'publication';
+  $field_group->mode = 'teaser_listing';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Published info',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_issue_number',
+      1 => 'field_page_count',
+      2 => 'field_place_of_publication',
+      3 => 'field_pub_book_title',
+      4 => 'field_pub_date_day',
+      5 => 'field_pub_date_month',
+      6 => 'field_publisher',
+      7 => 'field_volume_number',
+      8 => 'field_year_of_publication',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Published info',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_wrapper_published|node|publication|teaser_listing'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_published|node|publication|views_content_pane';
+  $field_group->group_name = 'group_wrapper_published';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'publication';
+  $field_group->mode = 'views_content_pane';
+  $field_group->parent_name = 'group_wrapper_featured';
+  $field_group->data = array(
+    'label' => 'Published info',
+    'weight' => '3',
+    'children' => array(
+      0 => 'field_issue_number',
+      1 => 'field_page_count',
+      2 => 'field_place_of_publication',
+      3 => 'field_pub_book_title',
+      4 => 'field_pub_date_day',
+      5 => 'field_pub_date_month',
+      6 => 'field_publisher',
+      7 => 'field_volume_number',
+      8 => 'field_year_of_publication',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Published info',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_wrapper_published|node|publication|views_content_pane'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
