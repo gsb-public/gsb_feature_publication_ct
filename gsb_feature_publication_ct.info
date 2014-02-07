@@ -93,6 +93,7 @@ features[variable][] = node_options_publication
 features[variable][] = node_preview_publication
 features[variable][] = node_submitted_publication
 features[variable][] = pathauto_node_publication_pattern
+features[variable][] = workbench_access_node_type_publication
 features_exclude[field][node-publication-field_addthis] = node-publication-field_addthis
 features_exclude[field][node-publication-field_academic_area_unlimited] = node-publication-field_academic_area_unlimited
 features_exclude[field][node-publication-field_body] = node-publication-field_body
