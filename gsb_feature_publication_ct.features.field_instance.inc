@@ -235,12 +235,13 @@ function gsb_feature_publication_ct_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'field_collection',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
+          'separator' => ', ',
           'view_mode' => 'existing_node_teaser',
         ),
-        'type' => 'field_collection_fields',
+        'type' => 'gsb_field_formatter_field_collection_separator',
         'weight' => 1,
       ),
       'teaser_listing' => array(
