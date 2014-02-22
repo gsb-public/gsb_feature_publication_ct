@@ -189,6 +189,7 @@ function _gsb_feature_publication_ct_update_academic_area() {
     //$nid = '329206'; // pub1 - works
     //$nid = '329196'; // pub2 - works
     //$nid = '329186'; // pub3 - works
+    //$nid = '337451'; // no author id
     dpm('pub node id = '.$nid);
 
     // load the publication node
@@ -222,14 +223,25 @@ function _gsb_feature_publication_ct_update_academic_area() {
 
         // get author's node id
 
-        $author_nid = $authors[0]->field_person_fac_single_ref['und'][0]['target_id'];     
-        //dpm($author_nid);
+        foreach ($authors as $author) {
 
-        // load the author node
-        $author_node = node_load($author_nid);
+          //dpm($author);
 
-        // update the publication with this author
-        _gsb_feature_publication_ct_apply_author_academic_area($pub_node, $author_node);
+          if (!empty($author->field_person_fac_single_ref['und']) && !empty($author->field_person_fac_single_ref['und'][0]['target_id'])) {
+
+            $author_nid = $author->field_person_fac_single_ref['und'][0]['target_id'];     
+            //dpm($author_nid);
+
+            // load the author node
+            $author_node = node_load($author_nid);
+
+            // update the publication with this author
+            _gsb_feature_publication_ct_apply_author_academic_area($pub_node, $author_node);
+
+            break; 
+
+          }
+        }
 
       }
 
