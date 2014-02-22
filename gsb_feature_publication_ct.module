@@ -143,153 +143,66 @@ function gsb_feature_publication_ct_gsb_feature_base_fields_faculty_author_types
 function _gsb_feature_publication_ct_update_academic_area() {
 
   // get list of all publications
-
   $query = db_select('node', 'node')
     ->fields('node')
     ->condition('type', 'publication')
     ->execute();
   $entities = $query->fetchAll();
-  //dpm($entities);
 
-  // loop thru list of pubs
+  // loop thru the list of publications
 
   foreach ($entities as $info) {
     
-    $nid = $info->nid;
-
-    //////////////////////////////
-    // testing notes
-    /*
-    pub0 - 
-    node/326621/edit
-    author = 302716 (Sun)
-    no academic area set
-    and... author has academic area = Marketing
-
-    pub1 - What Theory is Not
-    node/329206/edit
-    author = 306471 (Sutton)
-    no academic area set
-    but... author has no academic area set
-
-    pub2 - World Wealth Expanding
-    node/329196/edit
-    author = 302566 (Rowen)
-    no academic area set
-    and... author has academic area = Policial Economy
-
-    pub3 - Intrafirm Bargaining Under Nonbinding Contracts
-    node/329186/edit
-    author = 302701 (Zwiebel)
-    no academic area set
-    and... author has academic area = Finance
-    */
-
-    //$nid = '326621'; // pub0 - works
-    //$nid = '329206'; // pub1 - works
-    //$nid = '329196'; // pub2 - works
-    //$nid = '329186'; // pub3 - works
-    //$nid = '337451'; // no author id
-    dpm('pub node id = '.$nid);
-
     // load the publication node
+    $nid = $info->nid;    
     $pub_node = node_load($nid);
-    //dpm($pub_node);
-
-    //////////////////////////////
-    // testing stuff
-    //$ewrapper = entity_metadata_wrapper('node', $pub_node);
-    //dpm(_wrapper_debug($ewrapper));
 
     // check if academic area is set
-    // if academic area is not set
-    // we will try to use the author's 
-    // academic area
+    // if academic area is not set we will try to use the author's academic area
+
     if (empty($pub_node->field_academic_area_unlimited)) {
 
       // get the entity wrapper for the node
-
       $ewrapper = entity_metadata_wrapper('node', $pub_node);
-      //dpm(_wrapper_debug($ewrapper));
 
       // get the authors info
-
       $authors = $ewrapper->field_authors->value();
-      //dpm($authors);
 
-      // get the first author nid
+      // get the first author and update the publication
 
       if (!empty($authors)) {
-
-        // get author's node id
-
         foreach ($authors as $author) {
-
-          //dpm($author);
-
           if (!empty($author->field_person_fac_single_ref['und']) && !empty($author->field_person_fac_single_ref['und'][0]['target_id'])) {
-
+        		// get author's node id
             $author_nid = $author->field_person_fac_single_ref['und'][0]['target_id'];     
-            //dpm($author_nid);
-
             // load the author node
             $author_node = node_load($author_nid);
-
             // update the publication with this author
             _gsb_feature_publication_ct_apply_author_academic_area($pub_node, $author_node);
-
+            // break out - we only need to apply the first author's info
             break; 
-
           }
         }
-
       }
-
     }
-
-    //////////////////////////////
-    // testing stuff
-    //break;
-
   }
-
 }
 
 function _gsb_feature_publication_ct_apply_author_academic_area($pub_node, $author_node) {
 
-  //dpm('in _gsb_feature_publication_ct_apply_author_academic_area');
-
   // get entity wrapper for publication node
-
   $ewrap_pub = entity_metadata_wrapper('node', $pub_node);
-  //dpm(_wrapper_debug($ewrap_pub));
 
   // get entity wrapper for the author node
-
   $ewrap_author = entity_metadata_wrapper('node', $author_node);
-  //dpm(_wrapper_debug($ewrap_author));  
 
   // get the term for the author's academic area
-
   $academic_area = $ewrap_author->field_academic_area_single->value();
+
   if ($academic_area != null) {
     // set the academic area term into the publication
-    //dpm($academic_area);
     $ewrap_pub->field_academic_area_unlimited->set(array($academic_area));
-    //dpm(_wrapper_debug($ewrap_pub)); 
     $ewrap_pub->save();
   }
 
 }
-
-//////////////////////////////
-// testing stuff
-/*
-function _wrapper_debug($w) {
-  $values = array();
-  foreach ($w->getPropertyInfo() as $key => $val) {
-    $values[$key] = $w->$key->value();
-  }
-  return $values;
-}
-*/
