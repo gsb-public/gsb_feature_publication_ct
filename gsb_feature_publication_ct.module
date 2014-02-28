@@ -11,41 +11,8 @@ include_once 'gsb_feature_publication_ct.features.inc';
  * Implements hook_form_FORM_ID_alter() for publication node edit form.
  */
 function gsb_feature_publication_ct_form_publication_node_form_alter(&$form, &$form_state) {
+  
   $language = $form['language']['#value'];
-
-  if (!empty($form['field_authors'][$language])) {
-    foreach (element_children($form['field_authors'][$language]) as $index) {
-      if (is_integer($index)) {
-
-        $form['field_authors'][$language][$index]['field_person_fac_single_ref']['#states'] = array(
-          'visible' => array(
-            ':input[name="field_authors[' . $language . '][' . $index . '][field_person_fac_or_other][' . $language . ']"]' => array(
-              array('value' => 'UseEntityReference'),
-            ),
-          ),
-        );
-
-        $form['field_authors'][$language][$index]['field_first_name']['#states'] = array(
-          'visible' => array(
-            ':input[name="field_authors[' . $language . '][' . $index . '][field_person_fac_or_other][' . $language . ']"]' => array(
-              array('value' => 'Other'),
-            ),
-          ),
-        );
-
-        $form['field_authors'][$language][$index]['field_last_name']['#states'] = array(
-          'visible' => array(
-            ':input[name="field_authors[' . $language . '][' . $index . '][field_person_fac_or_other][' . $language . ']"]' => array(
-              array('value' => 'Other'),
-            ),
-          ),
-        );
-
-        // remove "n/a" as an option for the fac_or_other
-        unset($form['field_authors'][$language][$index]['field_person_fac_or_other'][$language]['#options']['_none']);
-      }
-    }
-  }
 
   // Add required field markers. The actual field validation is done in validate callback.
   if (!empty($form['field_first_name'][$language])) {
