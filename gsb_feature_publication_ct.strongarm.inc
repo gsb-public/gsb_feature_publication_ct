@@ -68,19 +68,19 @@ function gsb_feature_publication_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '17',
+          'weight' => '15',
         ),
         'title' => array(
-          'weight' => '8',
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => '16',
+          'weight' => '14',
         ),
         'workbench_access' => array(
           'weight' => '9',
         ),
         'redirect' => array(
-          'weight' => '19',
+          'weight' => '17',
         ),
       ),
       'display' => array(

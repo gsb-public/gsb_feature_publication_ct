@@ -153,7 +153,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'addthis_button_widget',
-      'weight' => 15,
+      'weight' => 13,
     ),
     'workbench_access_field' => 0,
   );
@@ -220,7 +220,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'bundle' => 'publication',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'To add yourself or another Stanford GSB faculty member as an author, click the button next to "Faculty," then enter the first few characters of the first or last name. The lookup feature will display potential matches; click on the desired name.<br><br>  
+To add a non-Stanford-GSB author, enter the first and last name of the individual in their respective fields. If you would like to include a middle initial, enter it in the "First Name" field.',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -282,7 +283,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 10,
+      'weight' => 1,
     ),
     'workbench_access_field' => 0,
   );
@@ -360,7 +361,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_business_insight_topic',
-    'label' => 'Business Insight Topic',
+    'label' => 'Additional Topic',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -372,7 +373,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 17,
+      'weight' => 19,
     ),
     'workbench_access_field' => 0,
   );
@@ -412,7 +413,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_centers_research_programs',
-    'label' => 'Centers',
+    'label' => 'Centers and Initiatives',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -424,7 +425,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 23,
+      'weight' => 24,
     ),
     'workbench_access_field' => 0,
   );
@@ -488,7 +489,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_company_organization',
-    'label' => 'Company Organization',
+    'label' => 'Company or Organization',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -502,7 +503,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 21,
+      'weight' => 22,
     ),
     'workbench_access_field' => 0,
   );
@@ -512,7 +513,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'bundle' => 'publication',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter a one-paragraph abstract. Multiple paragraphs will be merged into one.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -566,7 +567,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 12,
+      'weight' => 9,
     ),
     'workbench_access_field' => 0,
   );
@@ -575,7 +576,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
   $field_instances['node-publication-field_file_single_public'] = array(
     'bundle' => 'publication',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Click "Choose File," locate and select the file, click "Open," then click "Upload." <strong>You cannot add a PDF of the publication if you do not have permission from the copyright holder.</strong>',
     'display' => array(
       'business_insight' => array(
         'label' => 'hidden',
@@ -621,7 +622,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
       'description_field' => 0,
       'file_directory' => 'publication-pdf',
       'file_extensions' => 'pdf',
-      'max_filesize' => '',
+      'max_filesize' => '256 MB',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -767,7 +768,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 20,
+      'weight' => 21,
     ),
     'workbench_access_field' => 0,
   );
@@ -843,7 +844,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_issue_number',
-    'label' => 'Issue Number',
+    'label' => 'Issue',
     'required' => 0,
     'settings' => array(
       'linkit' => array(
@@ -862,7 +863,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 4,
     ),
     'workbench_access_field' => 0,
   );
@@ -1124,7 +1125,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 5,
     ),
     'workbench_access_field' => 0,
   );
@@ -1134,7 +1135,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'bundle' => 'publication',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'For book chapters only. Enter the city. | e.g. New York',
+    'description' => '<strong>For book chapters only.</strong> Enter the city (not the state or country).',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -1173,7 +1174,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_place_of_publication',
-    'label' => 'Place of publication',
+    'label' => 'Place of Publication',
     'required' => 0,
     'settings' => array(
       'linkit' => array(
@@ -1192,7 +1193,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 1,
+      'weight' => 7,
     ),
     'workbench_access_field' => 0,
   );
@@ -1254,7 +1255,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'bundle' => 'publication',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Use the journal\'s formal name in title case. | e.g. Journal of Marketing Research',
+    'description' => 'Use the journal\'s formal name in title case. For book chapters, enter the book title. | e.g. Journal of Marketing Research',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -1293,7 +1294,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_pub_book_title',
-    'label' => 'Source Publication / Book Title',
+    'label' => 'Source Publication',
     'required' => 1,
     'settings' => array(
       'linkit' => array(
@@ -1312,7 +1313,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 0,
+      'weight' => 2,
     ),
     'workbench_access_field' => 0,
   );
@@ -1373,7 +1374,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_pub_date_day',
-    'label' => 'Publication Day',
+    'label' => 'Day',
     'required' => 0,
     'settings' => array(
       'max' => 31,
@@ -1399,7 +1400,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'bundle' => 'publication',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter numeric equivalent for desired month.',
+    'description' => 'Enter the numeric equivalent for desired month (1-12).',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -1438,7 +1439,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_pub_date_month',
-    'label' => 'Publication Month',
+    'label' => 'Month',
     'required' => 0,
     'settings' => array(
       'max' => 12,
@@ -1464,7 +1465,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'bundle' => 'publication',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'For book chapters only. | e.g. Broadway Books',
+    'description' => '<strong>For book chapters only.</strong> | e.g. Broadway Books',
     'display' => array(
       'business_insight' => array(
         'label' => 'hidden',
@@ -1549,7 +1550,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 6,
     ),
     'workbench_access_field' => 0,
   );
@@ -1625,7 +1626,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 19,
+      'weight' => 20,
     ),
     'workbench_access_field' => 0,
   );
@@ -1772,7 +1773,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'concat_field_default',
-      'weight' => 18,
+      'weight' => 16,
     ),
     'workbench_access_field' => 0,
   );
@@ -1836,7 +1837,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_tag',
-    'label' => 'Tags',
+    'label' => 'Keywords',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1850,7 +1851,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 22,
+      'weight' => 23,
     ),
     'workbench_access_field' => 0,
   );
@@ -1926,7 +1927,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_volume_number',
-    'label' => 'Volume Number',
+    'label' => 'Volume',
     'required' => 0,
     'settings' => array(
       'linkit' => array(
@@ -1945,7 +1946,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 3,
     ),
     'workbench_access_field' => 0,
   );
@@ -2074,7 +2075,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_year_of_publication',
-    'label' => 'Publication year',
+    'label' => 'Year',
     'required' => 1,
     'settings' => array(
       'default_value' => 'now',
@@ -2105,39 +2106,43 @@ function gsb_feature_publication_ct_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('<strong>For book chapters only.</strong> Enter the city (not the state or country).');
+  t('<strong>For book chapters only.</strong> | e.g. Broadway Books');
   t('Abstract');
   t('Academic Area');
   t('AddThis');
+  t('Additional Topic');
   t('Alumni Degree Year');
   t('Alumni Degree/Program');
   t('Alumni Mentioned');
   t('Authors');
-  t('Business Insight Topic');
-  t('Centers');
-  t('Company Organization');
-  t('Enter numeric equivalent for desired month.');
+  t('Centers and Initiatives');
+  t('Click "Choose File," locate and select the file, click "Open," then click "Upload." <strong>You cannot add a PDF of the publication if you do not have permission from the copyright holder.</strong>');
+  t('Company or Organization');
+  t('Day');
+  t('Enter a one-paragraph abstract. Multiple paragraphs will be merged into one.');
+  t('Enter the numeric equivalent for desired month (1-12).');
   t('First Name');
-  t('For book chapters only. Enter the city. | e.g. New York');
-  t('For book chapters only. | e.g. Broadway Books');
   t('Industry');
-  t('Issue Number');
+  t('Issue');
+  t('Keywords');
   t('Last Name');
   t('Middle Name');
+  t('Month');
   t('Pages');
-  t('Place of publication');
-  t('Publication Day');
+  t('Place of Publication');
   t('Publication Link');
-  t('Publication Month');
   t('Publication PDF');
-  t('Publication year');
   t('Publisher');
   t('Region');
   t('Salutation');
   t('Search field');
-  t('Source Publication / Book Title');
-  t('Tags');
-  t('Use the journal\'s formal name in title case. | e.g. Journal of Marketing Research');
-  t('Volume Number');
+  t('Source Publication');
+  t('To add yourself or another Stanford GSB faculty member as an author, click the button next to "Faculty," then enter the first few characters of the first or last name. The lookup feature will display potential matches; click on the desired name.<br><br>  
+To add a non-Stanford-GSB author, enter the first and last name of the individual in their respective fields. If you would like to include a middle initial, enter it in the "First Name" field.');
+  t('Use the journal\'s formal name in title case. For book chapters, enter the book title. | e.g. Journal of Marketing Research');
+  t('Volume');
+  t('Year');
   t('e.g. http://journals.ama.org/article');
 
   return $field_instances;
