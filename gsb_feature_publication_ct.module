@@ -14,6 +14,14 @@ function gsb_feature_publication_ct_form_publication_node_form_alter(&$form, &$f
   
   $language = $form['language']['#value'];
 
+  $form['title']['#prefix'] = 
+  'Enter <strong>published academic content only</strong>. Examples include journal articles, book chapters (not complete books), presentations, and technical reports. '
+  . 'Add non-scholarly articles in magazines, newspapers, or other non-academic periodicals as <a href="/node/add/media-item" target="_blank">media items</a>. '
+  . 'To add or edit working papers or books, return to your <a href="/admin/workbench">Dashboard</a>. '
+  . 'Fields with a red asterisk (*) are required. For help with adding or editing books, <a href="https://remedyweb.stanford.edu/helpsu/gsb" target="_blank">submit a HelpSU ticket</a>.';
+  $form['title']['#description'] = 
+  'Enter the title of the publication (in title case). | e.g. Initial Evidence on the Market Impact of the XBRL Mandate';
+
   // Add required field markers. The actual field validation is done in validate callback.
   if (!empty($form['field_first_name'][$language])) {
     $form['field_first_name'][$language][0]['value']['#title'] .= " " . theme('form_required_marker');
