@@ -576,7 +576,7 @@ To add a non-Stanford-GSB author, enter the first and last name of the individua
   $field_instances['node-publication-field_file_single_public'] = array(
     'bundle' => 'publication',
     'deleted' => 0,
-    'description' => 'Click "Choose File," locate and select the file, click "Open," then click "Upload." <strong>You cannot add a PDF of the publication if you do not have permission from the copyright holder.</strong>',
+    'description' => 'Click "Choose File," locate and select the file, click "Open," then click "Upload."',
     'display' => array(
       'business_insight' => array(
         'label' => 'hidden',
@@ -844,7 +844,7 @@ To add a non-Stanford-GSB author, enter the first and last name of the individua
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_issue_number',
-    'label' => 'Issue',
+    'label' => 'Issue Number',
     'required' => 0,
     'settings' => array(
       'linkit' => array(
@@ -1294,7 +1294,7 @@ To add a non-Stanford-GSB author, enter the first and last name of the individua
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_pub_book_title',
-    'label' => 'Source Publication',
+    'label' => 'Source Publication / Book Title',
     'required' => 1,
     'settings' => array(
       'linkit' => array(
@@ -1374,7 +1374,7 @@ To add a non-Stanford-GSB author, enter the first and last name of the individua
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_pub_date_day',
-    'label' => 'Day',
+    'label' => 'Publication Day',
     'required' => 0,
     'settings' => array(
       'max' => 31,
@@ -1439,7 +1439,7 @@ To add a non-Stanford-GSB author, enter the first and last name of the individua
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_pub_date_month',
-    'label' => 'Month',
+    'label' => 'Publication Month',
     'required' => 0,
     'settings' => array(
       'max' => 12,
@@ -1927,7 +1927,7 @@ To add a non-Stanford-GSB author, enter the first and last name of the individua
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_volume_number',
-    'label' => 'Volume',
+    'label' => 'Volume Number',
     'required' => 0,
     'settings' => array(
       'linkit' => array(
@@ -2075,7 +2075,7 @@ To add a non-Stanford-GSB author, enter the first and last name of the individua
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_year_of_publication',
-    'label' => 'Year',
+    'label' => 'Publication Year',
     'required' => 1,
     'settings' => array(
       'default_value' => 'now',
@@ -2117,32 +2117,32 @@ To add a non-Stanford-GSB author, enter the first and last name of the individua
   t('Alumni Mentioned');
   t('Authors');
   t('Centers and Initiatives');
-  t('Click "Choose File," locate and select the file, click "Open," then click "Upload." <strong>You cannot add a PDF of the publication if you do not have permission from the copyright holder.</strong>');
+  t('Click "Choose File," locate and select the file, click "Open," then click "Upload."');
   t('Company or Organization');
-  t('Day');
   t('Enter a one-paragraph abstract. Multiple paragraphs will be merged into one.');
   t('Enter the numeric equivalent for desired month (1-12).');
   t('First Name');
   t('Industry');
-  t('Issue');
+  t('Issue Number');
   t('Keywords');
   t('Last Name');
   t('Middle Name');
-  t('Month');
   t('Pages');
   t('Place of Publication');
+  t('Publication Day');
   t('Publication Link');
+  t('Publication Month');
   t('Publication PDF');
+  t('Publication Year');
   t('Publisher');
   t('Region');
   t('Salutation');
   t('Search field');
-  t('Source Publication');
+  t('Source Publication / Book Title');
   t('To add yourself or another Stanford GSB faculty member as an author, click the button next to "Faculty," then enter the first few characters of the first or last name. The lookup feature will display potential matches; click on the desired name.<br><br>  
 To add a non-Stanford-GSB author, enter the first and last name of the individual in their respective fields. If you would like to include a middle initial, enter it in the "First Name" field.');
   t('Use the journal\'s formal name in title case. For book chapters, enter the book title. | e.g. Journal of Marketing Research');
-  t('Volume');
-  t('Year');
+  t('Volume Number');
   t('e.g. http://journals.ama.org/article');
 
   return $field_instances;
