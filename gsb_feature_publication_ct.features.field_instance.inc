@@ -859,7 +859,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
       'settings' => array(
         'maxlength_js' => 0,
         'maxlength_js_label' => '',
-        'size' => 60,
+        'size' => 12,
       ),
       'type' => 'text_textfield',
       'weight' => 6,
@@ -1121,7 +1121,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
       'settings' => array(
         'maxlength_js' => 0,
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'size' => 60,
+        'size' => 12,
       ),
       'type' => 'text_textfield',
       'weight' => 7,
@@ -1994,7 +1994,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
       'settings' => array(
         'maxlength_js' => 0,
         'maxlength_js_label' => '',
-        'size' => 60,
+        'size' => 12,
       ),
       'type' => 'text_textfield',
       'weight' => 5,
