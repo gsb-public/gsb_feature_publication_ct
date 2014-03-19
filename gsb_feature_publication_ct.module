@@ -46,24 +46,6 @@ function gsb_feature_publication_ct_form_publication_node_form_alter(&$form, &$f
 
   // Perform additional validation.
   $form['#validate'][] = 'gsb_feature_publication_ct_publication_node_form_validate';
-
-  // Hide the following fields if the user is in the Faculty role.
-  if (in_array('Faculty', $GLOBALS['user']->roles)) {
-    $field_map = array(
-      'field_academic_area_unlimited',
-      'field_alumni_story',
-      'field_business_insight_topic',
-      'field_centers_research_programs',
-      'field_company_organization',
-      'field_industry',
-      'field_region',
-    );
-    foreach ($field_map as $field_name) {
-      if (isset($form[$field_name])) {
-        $form[$field_name]['#access'] = FALSE;
-      }
-    }
-  }
 }
 
 /**
