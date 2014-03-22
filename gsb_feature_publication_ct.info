@@ -68,6 +68,7 @@ features[field_instance][] = node-publication-field_authors
 features[field_instance][] = node-publication-field_business_insight_topic
 features[field_instance][] = node-publication-field_centers_research_programs
 features[field_instance][] = node-publication-field_company_organization
+features[field_instance][] = node-publication-field_date
 features[field_instance][] = node-publication-field_description
 features[field_instance][] = node-publication-field_file_single_public
 features[field_instance][] = node-publication-field_first_name
