@@ -209,6 +209,7 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'prefix' => 'Issue ',
         ),
       ),
     ),
@@ -230,6 +231,7 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'prefix' => 'Pages ',
         ),
       ),
     ),
@@ -284,6 +286,7 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'prefix' => 'Vol. ',
         ),
       ),
     ),
@@ -380,7 +383,7 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'prefix' => ', ',
+          'prefix' => ', Issue ',
         ),
       ),
     ),
@@ -388,7 +391,7 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'prefix' => ', ',
+          'prefix' => ', Pages ',
         ),
       ),
     ),
@@ -446,7 +449,7 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'prefix' => ', ',
+          'prefix' => ', Vol. ',
         ),
       ),
     ),
@@ -493,6 +496,7 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'prefix' => 'Issue ',
           'suffix' => ', ',
         ),
       ),
@@ -501,6 +505,7 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'prefix' => 'Pages ',
           'suffix' => '.',
         ),
       ),
@@ -555,6 +560,7 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'prefix' => 'Vol. ',
           'suffix' => ', ',
         ),
       ),
@@ -671,15 +677,15 @@ function gsb_feature_publication_ct_ds_layout_settings_info() {
         6 => 'field_publisher',
         7 => 'field_file_single_public',
         8 => 'field_pub_date_month',
-        9 => 'group_wrapper_commas',
-        10 => 'field_academic_area_unlimited',
+        9 => 'field_academic_area_unlimited',
+        10 => 'group_wrapper_commas',
         11 => 'field_business_insight_topic',
         12 => 'field_pub_date_day',
         13 => 'field_year_of_publication',
         14 => 'field_volume_number',
         15 => 'field_issue_number',
-        16 => 'field_page_count',
-        17 => 'group_wrapper_topics',
+        16 => 'group_wrapper_topics',
+        17 => 'field_page_count',
         18 => 'group_wrapper_links',
         19 => 'field_description',
       ),
@@ -697,15 +703,15 @@ function gsb_feature_publication_ct_ds_layout_settings_info() {
       'field_publisher' => 'left',
       'field_file_single_public' => 'left',
       'field_pub_date_month' => 'left',
-      'group_wrapper_commas' => 'left',
       'field_academic_area_unlimited' => 'left',
+      'group_wrapper_commas' => 'left',
       'field_business_insight_topic' => 'left',
       'field_pub_date_day' => 'left',
       'field_year_of_publication' => 'left',
       'field_volume_number' => 'left',
       'field_issue_number' => 'left',
-      'field_page_count' => 'left',
       'group_wrapper_topics' => 'left',
+      'field_page_count' => 'left',
       'group_wrapper_links' => 'left',
       'field_description' => 'left',
       'gsb_feature_base_fields_faculty_authors' => 'right',
@@ -775,8 +781,8 @@ function gsb_feature_publication_ct_ds_layout_settings_info() {
         9 => 'field_volume_number',
         10 => 'field_issue_number',
         11 => 'field_page_count',
-        12 => 'group_wrapper_topics',
-        13 => 'field_academic_area_unlimited',
+        12 => 'field_academic_area_unlimited',
+        13 => 'group_wrapper_topics',
         14 => 'field_business_insight_topic',
       ),
     ),
@@ -793,8 +799,8 @@ function gsb_feature_publication_ct_ds_layout_settings_info() {
       'field_volume_number' => 'ds_content',
       'field_issue_number' => 'ds_content',
       'field_page_count' => 'ds_content',
-      'group_wrapper_topics' => 'ds_content',
       'field_academic_area_unlimited' => 'ds_content',
+      'group_wrapper_topics' => 'ds_content',
       'field_business_insight_topic' => 'ds_content',
     ),
     'classes' => array(),
