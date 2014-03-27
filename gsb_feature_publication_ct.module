@@ -40,10 +40,6 @@ function gsb_feature_publication_ct_form_publication_node_form_alter(&$form, &$f
     array('checked' => FALSE),
   );
 
-  if ($form['field_year_of_publication'][$language][0]['#required']) {
-    $form['field_year_of_publication'][$language][0]['#title'] .= " " . theme('form_required_marker');
-  }
-
   // Perform additional validation.
   $form['#validate'][] = 'gsb_feature_publication_ct_publication_node_form_validate';
 }
