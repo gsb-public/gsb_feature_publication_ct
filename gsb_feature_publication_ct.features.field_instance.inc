@@ -86,6 +86,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Academic Area',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -144,6 +146,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'AddThis',
     'required' => FALSE,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -200,6 +204,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Alumni Mentioned',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -218,6 +224,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
   // Exported field_instance: 'node-publication-field_authors'
   $field_instances['node-publication-field_authors'] = array(
     'bundle' => 'publication',
+    'custom_add_another' => 'Add Another Author',
+    'custom_remove' => 'Remove Author',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -273,6 +281,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Authors',
     'required' => 1,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -363,6 +373,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Business Insight Topic',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -415,6 +427,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Centers',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -491,6 +505,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Company Organization',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -553,6 +569,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Publication Date',
     'required' => 1,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'default_value' => 'now',
       'default_value2' => 'same',
       'default_value_code' => '',
@@ -620,6 +638,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Abstract',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -690,6 +710,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Publication PDF',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'description_field' => 0,
       'file_directory' => 'publication-pdf',
       'file_extensions' => 'pdf',
@@ -747,6 +769,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'First Name',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -830,6 +854,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Industry',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -918,6 +944,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Issue Number',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -977,6 +1005,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Last Name',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -1046,6 +1076,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'target' => '_blank',
         'title' => '',
       ),
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'display' => array(
         'url_cutoff' => 80,
       ),
@@ -1112,6 +1144,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Middle Name',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -1180,6 +1214,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Pages',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -1248,6 +1284,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Place of publication',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -1307,6 +1345,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Alumni Degree/Program',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1368,6 +1408,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Source Publication / Book Title',
     'required' => 1,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -1448,6 +1490,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Publication Day',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'max' => 31,
       'min' => 1,
       'prefix' => '',
@@ -1513,6 +1557,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Publication Month',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'max' => 12,
       'min' => 1,
       'prefix' => '',
@@ -1605,6 +1651,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Publisher',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -1688,6 +1736,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Region',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1740,6 +1790,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Salutation',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -1804,6 +1856,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Search field',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'selected_fields' => array(
         'concat_field_entity_label' => 'concat_field_entity_label',
         'field_academic_area_unlimited' => 'field_academic_area_unlimited',
@@ -1887,6 +1941,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Submit',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1963,6 +2019,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Tags',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2053,6 +2111,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Volume Number',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -2111,6 +2171,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Alumni Degree Year',
     'required' => 0,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'default_value' => 'now',
       'default_value2' => 'same',
       'default_value_code' => '',
@@ -2201,6 +2263,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'label' => 'Publication year',
     'required' => 1,
     'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
       'default_value' => 'now',
       'default_value2' => 'same',
       'default_value_code' => '',
