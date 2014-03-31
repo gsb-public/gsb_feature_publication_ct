@@ -224,8 +224,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
   // Exported field_instance: 'node-publication-field_authors'
   $field_instances['node-publication-field_authors'] = array(
     'bundle' => 'publication',
-    'custom_add_another' => '',
-    'custom_remove' => '',
+    'custom_add_another' => 'Add Another Author',
+    'custom_remove' => 'Remove Author',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
