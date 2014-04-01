@@ -51,7 +51,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Alumni story',
-    'weight' => '13',
+    'weight' => '14',
     'children' => array(
       0 => 'field_alumni_story',
       1 => 'field_program_single',
@@ -81,7 +81,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Publication Link/PDF',
-    'weight' => '12',
+    'weight' => '13',
     'children' => array(
       0 => 'field_file_single_public',
       1 => 'field_link_single',
@@ -115,6 +115,7 @@ function gsb_feature_publication_ct_field_group_info() {
       0 => 'field_pub_date_day',
       1 => 'field_pub_date_month',
       2 => 'field_year_of_publication',
+      3 => 'field_month',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -211,7 +212,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tagging',
-    'weight' => '14',
+    'weight' => '15',
     'children' => array(
       0 => 'field_academic_area_unlimited',
       1 => 'field_business_insight_topic',
