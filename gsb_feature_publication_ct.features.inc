@@ -29,7 +29,7 @@ function gsb_feature_publication_ct_node_info() {
       'base' => 'node_content',
       'description' => t('Add a Publication'),
       'has_title' => '1',
-      'title_label' => t('Article/Book Chapter Title'),
+      'title_label' => t('Article Title'),
       'help' => '',
     ),
   );

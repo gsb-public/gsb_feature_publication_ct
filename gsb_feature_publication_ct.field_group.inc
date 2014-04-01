@@ -81,19 +81,20 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Publication Link/PDF',
-    'weight' => '11',
+    'weight' => '12',
     'children' => array(
       0 => 'field_file_single_public',
       1 => 'field_link_single',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'label' => 'Publication Link/PDF',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
         'required_fields' => 1,
+        'classes' => '',
+        'description' => 'Enter a link to <strong>or</strong> upload a PDF of the publication. ',
       ),
+      'formatter' => 'collapsible',
     ),
   );
   $export['group_pub_link_pdf|node|publication|form'] = $field_group;
@@ -109,7 +110,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Publication date',
-    'weight' => '5',
+    'weight' => '10',
     'children' => array(
       0 => 'field_pub_date_day',
       1 => 'field_pub_date_month',
@@ -209,7 +210,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Taxonomy',
+    'label' => 'Tagging',
     'weight' => '14',
     'children' => array(
       0 => 'field_academic_area_unlimited',
@@ -222,12 +223,13 @@ function gsb_feature_publication_ct_field_group_info() {
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'label' => 'Tagging',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
         'required_fields' => 1,
+        'classes' => '',
+        'description' => '',
       ),
+      'formatter' => 'collapsed',
     ),
   );
   $export['group_taxonomy|node|publication|form'] = $field_group;

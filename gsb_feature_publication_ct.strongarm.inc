@@ -71,7 +71,7 @@ function gsb_feature_publication_ct_strongarm() {
           'weight' => '17',
         ),
         'title' => array(
-          'weight' => '9',
+          'weight' => '1',
         ),
         'path' => array(
           'weight' => '16',
