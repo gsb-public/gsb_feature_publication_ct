@@ -374,7 +374,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_business_insight_topic',
-    'label' => 'Additional Topic',
+    'label' => 'Additional Topics',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -2339,6 +2339,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
   t('Alumni Degree/Program');
   t('Alumni Mentioned');
   t('Author & Co-Authors');
+  t('Additional Topics');
   t('Company or Organization');
   t('Day');
   t('Enter a one-paragraph abstract. Multiple paragraphs will be merged into one.');
@@ -2370,7 +2371,9 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
   t('To add another Stanford GSB faculty member as an author, click the button next to "Faculty," then enter the first few characters of the first or last name. The lookup feature will display potential matches; click on the desired name. <br><br>  
 Use "Other" for non-Stanford-GSB authors. If you would like to include a middle initial, enter it in the "First Name" field.<br><br>
 Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" style="margin-bottom:-8px;" /> next to an author and dragging it to the desired position.<br><br>');
+  t('Use the journal\'s formal name in title case. | e.g. Journal of Marketing Research');
   t('Volume');
+  t('e.g. http://journals.ama.org/article');
   t('Year');
 
   return $field_instances;
