@@ -370,7 +370,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_business_insight_topic',
-    'label' => 'Business Insight Topic',
+    'label' => 'Additional Topics',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -424,7 +424,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_centers_research_programs',
-    'label' => 'Centers',
+    'label' => 'Stanford GSB Affiliations or Initiatives',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -502,7 +502,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_company_organization',
-    'label' => 'Company Organization',
+    'label' => 'Company or Organization',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -1733,7 +1733,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_region',
-    'label' => 'Region',
+    'label' => 'Region of Interest',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -2016,7 +2016,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_tag',
-    'label' => 'Tags',
+    'label' => 'Keywords',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -2300,9 +2300,9 @@ function gsb_feature_publication_ct_field_default_field_instances() {
   t('Alumni Degree/Program');
   t('Alumni Mentioned');
   t('Author & Co-Authors');
-  t('Business Insight Topic');
-  t('Centers');
-  t('Company Organization');
+  t('Additional Topics');
+  t('Stanford GSB Affiliations or Initiatives');
+  t('Company or Organization');
   t('Enter numeric equivalent for desired month.');
   t('First Name');
   t('For book chapters only. Enter the city. | e.g. New York');
@@ -2320,12 +2320,12 @@ function gsb_feature_publication_ct_field_default_field_instances() {
   t('Publication PDF');
   t('Publication year');
   t('Publisher');
-  t('Region');
+  t('Region of Interest');
   t('Salutation');
   t('Search field');
   t('Source Publication / Book Title');
   t('Submit');
-  t('Tags');
+  t('Keywords');
   t('Use the journal\'s formal name in title case. | e.g. Journal of Marketing Research');
   t('Volume Number');
   t('e.g. http://journals.ama.org/article');
