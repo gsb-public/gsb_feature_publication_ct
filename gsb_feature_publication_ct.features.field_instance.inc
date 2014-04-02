@@ -1524,75 +1524,6 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_pub_date_month'
-  $field_instances['node-publication-field_pub_date_month'] = array(
-    'bundle' => 'publication',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Enter the numeric equivalent for desired month (1-12).',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'gsb_field_formatter',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'gsb_field_formatter_month',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 15,
-      ),
-      'teaser_listing' => array(
-        'label' => 'hidden',
-        'module' => 'gsb_field_formatter',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'gsb_field_formatter_month',
-        'weight' => 6,
-      ),
-      'views_content_pane' => array(
-        'label' => 'hidden',
-        'module' => 'gsb_field_formatter',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'gsb_field_formatter_month',
-        'weight' => 7,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_pub_date_month',
-    'label' => 'Month',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'max' => 12,
-      'min' => 1,
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'number',
-      'weight' => 37,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-publication-field_publisher'
   $field_instances['node-publication-field_publisher'] = array(
     'bundle' => 'publication',
@@ -2323,17 +2254,15 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
   t('Abstract');
   t('Academic Area');
   t('AddThis');
-  t('Additional Topic');
+  t('Additional Topics');
   t('Alumni Degree Year');
   t('Alumni Degree/Program');
   t('Alumni Mentioned');
   t('Author & Co-Authors');
-  t('Additional Topics');
   t('Company or Organization');
   t('Day');
   t('Enter a one-paragraph abstract. Multiple paragraphs will be merged into one.');
   t('Enter the journal\'s formal name in title case. For book chapters, enter the book title. | <strong>Example</strong>: Journal of Marketing Research');
-  t('Enter the numeric equivalent for desired month (1-12).');
   t('First Name');
   t('For book chapters only. Enter the city (not the state or country).');
   t('For book chapters only. | <strong>Example</strong>: Broadway Books');
