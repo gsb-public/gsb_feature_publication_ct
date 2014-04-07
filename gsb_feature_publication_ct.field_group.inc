@@ -246,7 +246,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->parent_name = 'group_wrapper_published';
   $field_group->data = array(
     'label' => 'Publication commas',
-    'weight' => '7',
+    'weight' => '9',
     'children' => array(
       0 => 'field_issue_number',
       1 => 'field_page_count',
@@ -357,8 +357,8 @@ function gsb_feature_publication_ct_field_group_info() {
     'children' => array(
       0 => 'field_place_of_publication',
       1 => 'field_pub_book_title',
-      2 => 'field_pub_date_month',
-      3 => 'field_publisher',
+      2 => 'field_publisher',
+      3 => 'field_month',
       4 => 'group_wrapper_commas',
     ),
     'format_type' => 'div',
@@ -395,10 +395,10 @@ function gsb_feature_publication_ct_field_group_info() {
       2 => 'field_place_of_publication',
       3 => 'field_pub_book_title',
       4 => 'field_pub_date_day',
-      5 => 'field_pub_date_month',
-      6 => 'field_publisher',
-      7 => 'field_volume_number',
-      8 => 'field_year_of_publication',
+      5 => 'field_publisher',
+      6 => 'field_volume_number',
+      7 => 'field_year_of_publication',
+      8 => 'field_month',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -434,10 +434,10 @@ function gsb_feature_publication_ct_field_group_info() {
       2 => 'field_place_of_publication',
       3 => 'field_pub_book_title',
       4 => 'field_pub_date_day',
-      5 => 'field_pub_date_month',
-      6 => 'field_publisher',
-      7 => 'field_volume_number',
-      8 => 'field_year_of_publication',
+      5 => 'field_publisher',
+      6 => 'field_volume_number',
+      7 => 'field_year_of_publication',
+      8 => 'field_month',
     ),
     'format_type' => 'div',
     'format_settings' => array(

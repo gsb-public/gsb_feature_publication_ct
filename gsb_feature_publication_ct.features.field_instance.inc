@@ -834,7 +834,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 11,
+        'weight' => 10,
       ),
       'featured' => array(
         'label' => 'above',
@@ -1126,13 +1126,13 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'list',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'list_default',
-        'weight' => 40,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1141,16 +1141,22 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'weight' => 0,
       ),
       'teaser_listing' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'list_default',
+        'weight' => 6,
       ),
       'views_content_pane' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'list_default',
+        'weight' => 7,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -1189,7 +1195,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1463,7 +1469,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 8,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1862,9 +1868,8 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => NULL,
         'settings' => array(),
-        'type' => 'submit_field_default',
+        'type' => 'hidden',
         'weight' => 38,
       ),
       'teaser' => array(
@@ -2015,7 +2020,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 10,
+        'weight' => 9,
       ),
       'featured' => array(
         'label' => 'above',
@@ -2175,7 +2180,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 9,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
