@@ -116,13 +116,17 @@ function gsb_feature_publication_ct_field_group_info() {
       1 => 'field_year_of_publication',
       2 => 'field_month',
     ),
-    'format_type' => 'fieldset',
+    'format_type' => 'div',
     'format_settings' => array(
       'label' => 'Publication date',
       'instance_settings' => array(
         'required_fields' => 1,
         'classes' => '',
         'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
       ),
       'formatter' => 'open',
     ),
