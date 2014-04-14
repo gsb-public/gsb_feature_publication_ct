@@ -192,6 +192,19 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_description' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => 'format-wysiwyg',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
     'field_file_single_public' => array(
       'formatter_settings' => array(
         'ft' => array(
