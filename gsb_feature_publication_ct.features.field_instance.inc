@@ -2248,7 +2248,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'year_range' => '-3:+3',
       ),
       'type' => 'date_text',
-      'weight' => 36,
+      'weight' => 40,
     ),
     'workbench_access_field' => 0,
   );
