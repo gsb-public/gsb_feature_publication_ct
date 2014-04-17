@@ -157,7 +157,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'addthis_button_widget',
-      'weight' => 16,
+      'weight' => 14,
     ),
     'workbench_access_field' => 0,
   );
@@ -1851,7 +1851,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'concat_field_default',
-      'weight' => 19,
+      'weight' => 17,
     ),
     'workbench_access_field' => 0,
   );
