@@ -25,9 +25,9 @@ function gsb_feature_publication_ct_ctools_plugin_api($module = NULL, $api = NUL
 function gsb_feature_publication_ct_node_info() {
   $items = array(
     'publication' => array(
-      'name' => t('Publication'),
+      'name' => t('Journal articles, book chapters, etc'),
       'base' => 'node_content',
-      'description' => t('Add a Publication'),
+      'description' => t('Add a Journal articles, book chapters, etc'),
       'has_title' => '1',
       'title_label' => t('Article Title'),
       'help' => '',
