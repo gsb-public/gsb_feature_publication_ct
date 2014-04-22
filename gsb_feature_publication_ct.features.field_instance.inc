@@ -1117,11 +1117,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
     'bundle' => 'publication',
     'custom_add_another' => '',
     'custom_remove' => '',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
