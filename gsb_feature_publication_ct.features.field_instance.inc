@@ -157,7 +157,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => '',
       ),
       'type' => 'addthis_button_widget',
-      'weight' => 14,
+      'weight' => 15,
     ),
     'workbench_access_field' => 0,
   );
@@ -594,7 +594,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 11,
+      'weight' => 12,
     ),
     'workbench_access_field' => 0,
   );
@@ -903,7 +903,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'size' => 12,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 6,
     ),
     'workbench_access_field' => 0,
   );
@@ -1242,7 +1242,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'size' => 12,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 7,
     ),
     'workbench_access_field' => 0,
   );
@@ -1314,7 +1314,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 9,
     ),
     'workbench_access_field' => 0,
   );
@@ -1440,7 +1440,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 4,
     ),
     'workbench_access_field' => 0,
   );
@@ -1522,6 +1522,69 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
       ),
       'type' => 'number',
       'weight' => 39,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-publication-field_publication_type'
+  $field_instances['node-publication-field_publication_type'] = array(
+    'bundle' => 'publication',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => array(
+      0 => array(
+        'value' => 'journal_article',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'list_default',
+        'weight' => 39,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'views_content_pane' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_publication_type',
+    'label' => 'Publication Type',
+    'required' => 1,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'options_buttons',
+      'weight' => 3,
     ),
     'workbench_access_field' => 0,
   );
@@ -1620,7 +1683,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 8,
     ),
     'workbench_access_field' => 0,
   );
@@ -1851,7 +1914,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'concat_field_default',
-      'weight' => 17,
+      'weight' => 18,
     ),
     'workbench_access_field' => 0,
   );
@@ -2085,7 +2148,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'size' => 12,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 5,
     ),
     'workbench_access_field' => 0,
   );
@@ -2279,6 +2342,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
   t('Place of Publication');
   t('Publication Link');
   t('Publication PDF');
+  t('Publication Type');
   t('Publisher');
   t('Region of Interest');
   t('Salutation');
