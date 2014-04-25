@@ -40,6 +40,21 @@ function gsb_feature_publication_ct_form_publication_node_form_alter(&$form, &$f
     array('checked' => FALSE),
   );
 
+  // Do not show publisher or place of publication for journal articles.
+  $form['field_publisher']['#states']['invisible'][':input[name="field_publication_type[' . $language . ']"]'] = array(
+    array('value' => 'journal_article'),
+  );
+  $form['field_place_of_publication']['#states']['invisible'][':input[name="field_publication_type[' . $language . ']"]'] = array(
+    array('value' => 'journal_article'),
+  );
+  // Do not show volume or issue number for book chapters
+  $form['field_volume_number']['#states']['invisible'][':input[name="field_publication_type[' . $language . ']"]'] = array(
+    array('value' => 'book_chapter'),
+  );
+  $form['field_issue_number']['#states']['invisible'][':input[name="field_publication_type[' . $language . ']"]'] = array(
+    array('value' => 'book_chapter'),
+  );
+
   // Perform additional validation.
   $form['#validate'][] = 'gsb_feature_publication_ct_publication_node_form_validate';
 }
