@@ -228,9 +228,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'custom_remove' => 'Remove Author',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'To add another Stanford GSB faculty member as an author, click the button next to "Faculty," then enter the first few characters of the first or last name. The lookup feature will display potential matches; click on the desired name. <br><br>  
-Use "Other" for non-Stanford-GSB authors. If you would like to include a middle initial, enter it in the "First Name" field.<br><br>
-Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" style="margin-bottom:-8px;" /> next to an author and dragging it to the desired position.<br><br>',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -605,8 +603,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
     'custom_add_another' => '',
     'custom_remove' => '',
     'deleted' => 0,
-    'description' => 'Max. file size: 256 MB | To add a PDF of the publication, click "Choose File," select the desired file, click "Open," then click "Upload." To replace an existing PDF, click "Remove," then upload the new PDF. 
-',
+    'description' => '',
     'display' => array(
       'business_insight' => array(
         'label' => 'hidden',
@@ -1380,7 +1377,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
     'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the journal\'s formal name in title case. For book chapters, enter the book title. | <strong>Example</strong>: Journal of Marketing Research',
+    'description' => '<strong>Example</strong>: Journal of Marketing Research',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -2314,6 +2311,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('<strong>Example</strong>: Journal of Marketing Research');
   t('<strong>Example</strong>: http://journals.ama.org/article');
   t('Abstract');
   t('Academic Area');
@@ -2326,7 +2324,6 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
   t('Company or Organization');
   t('Day');
   t('Enter a one-paragraph abstract. Multiple paragraphs will be merged into one.');
-  t('Enter the journal\'s formal name in title case. For book chapters, enter the book title. | <strong>Example</strong>: Journal of Marketing Research');
   t('First Name');
   t('For book chapters only. Enter the city (not the state or country).');
   t('For book chapters only. | <strong>Example</strong>: Broadway Books');
@@ -2334,8 +2331,6 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
   t('Issue');
   t('Keywords');
   t('Last Name');
-  t('Max. file size: 256 MB | To add a PDF of the publication, click "Choose File," select the desired file, click "Open," then click "Upload." To replace an existing PDF, click "Remove," then upload the new PDF. 
-');
   t('Middle Name');
   t('Month');
   t('Pages');
@@ -2350,9 +2345,6 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
   t('Source Publication');
   t('Stanford GSB Affiliations or Initiatives');
   t('Submit');
-  t('To add another Stanford GSB faculty member as an author, click the button next to "Faculty," then enter the first few characters of the first or last name. The lookup feature will display potential matches; click on the desired name. <br><br>  
-Use "Other" for non-Stanford-GSB authors. If you would like to include a middle initial, enter it in the "First Name" field.<br><br>
-Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/566x_variable/public/icon-handle-drag-drop.png?itok=boIYoP_K" height="25" width="25" style="margin-bottom:-8px;" /> next to an author and dragging it to the desired position.<br><br>');
   t('Volume');
   t('Year');
 
