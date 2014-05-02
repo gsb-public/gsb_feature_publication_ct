@@ -294,7 +294,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'field_collection_embed',
-      'weight' => 2,
+      'weight' => 3,
     ),
     'workbench_access_field' => 0,
   );
@@ -1584,7 +1584,7 @@ Reorder authors by grabbing the handle icon <img src="/sites/gsb/files/styles/56
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_buttons',
-      'weight' => 3,
+      'weight' => 1,
     ),
     'workbench_access_field' => 0,
   );
