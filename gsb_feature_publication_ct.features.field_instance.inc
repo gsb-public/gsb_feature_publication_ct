@@ -613,12 +613,13 @@ function gsb_feature_publication_ct_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'hidden',
-        'module' => 'file_entity',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
+          'file_view_mode' => 'default',
           'text' => 'Download',
         ),
-        'type' => 'file_download_link',
+        'type' => 'gsb_field_formatter_download_link',
         'weight' => 6,
       ),
       'teaser' => array(
@@ -1538,11 +1539,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'list_default',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 39,
       ),
       'teaser' => array(
