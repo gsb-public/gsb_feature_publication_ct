@@ -111,7 +111,7 @@ function gsb_feature_publication_ct_publication_node_form_validate($form, &$form
 function gsb_feature_publication_ct_node_presave($node) {
 
   // update the publication's academic area
-  if (empty($node->nid) && $node->type == 'publication') {
+  if (empty($node->nid) && $node->type == 'publication' && empty($node->field_academic_area_unlimited['und'])) {
     _gsb_feature_publication_ct_modify_academic_area($node);
   }
 }  
@@ -183,23 +183,10 @@ function _gsb_feature_publication_ct_modify_academic_area(&$pub_node) {
       }
     }
 
-    _gsb_feature_publication_ct_merge_academic_areas($pub_node, $academic_area_tids);
+    foreach($academic_area_tids as $tid) {
+      $pub_node->field_academic_area_unlimited['und'][] = array('tid' => $tid);
+    }    
 
-  }
-
-}
-
-function _gsb_feature_publication_ct_merge_academic_areas(&$pub_node, &$academic_area_tids) {
-
-  if (!empty($pub_node->field_academic_area_unlimited['und'])) {
-    foreach($pub_node->field_academic_area_unlimited['und'] as $key => $area) {
-      $academic_area_tids[$area['tid']] = $area['tid'];
-    }
-    $pub_node->field_academic_area_unlimited['und'] = array();
-  }
-
-  foreach($academic_area_tids as $tid) {
-    $pub_node->field_academic_area_unlimited['und'][] = array('tid' => $tid);
   }
 
 }
