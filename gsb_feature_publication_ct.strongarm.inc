@@ -64,6 +64,9 @@ function gsb_feature_publication_ct_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'idea_story_related' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -99,6 +102,10 @@ function gsb_feature_publication_ct_strongarm() {
           ),
           'teaser' => array(
             'weight' => '0',
+            'visible' => FALSE,
+          ),
+          'idea_story_related' => array(
+            'weight' => '15',
             'visible' => FALSE,
           ),
         ),
