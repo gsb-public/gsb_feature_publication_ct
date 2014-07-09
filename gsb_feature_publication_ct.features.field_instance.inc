@@ -442,7 +442,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 22,
+      'weight' => 23,
     ),
     'workbench_access_field' => 0,
   );
@@ -1793,6 +1793,65 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-publication-field_region_of_interest'
+  $field_instances['node-publication-field_region_of_interest'] = array(
+    'bundle' => 'publication',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 40,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'views_content_pane' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_region_of_interest',
+    'label' => 'Region of Interest',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'hs_taxonomy',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'taxonomy_hs',
+      'weight' => 21,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-publication-field_salutation'
   $field_instances['node-publication-field_salutation'] = array(
     'bundle' => 'publication',
@@ -2078,7 +2137,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 21,
+      'weight' => 22,
     ),
     'workbench_access_field' => 0,
   );
