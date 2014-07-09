@@ -13,36 +13,6 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_alumni_name|node|publication|form';
-  $field_group->group_name = 'group_alumni_name';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'publication';
-  $field_group->mode = 'form';
-  $field_group->parent_name = 'group_alumni_story';
-  $field_group->data = array(
-    'label' => 'Alumni Name',
-    'weight' => '7',
-    'children' => array(
-      0 => 'field_first_name',
-      1 => 'field_last_name',
-      2 => 'field_middle_name',
-      3 => 'field_salutation',
-    ),
-    'format_type' => 'fieldset',
-    'format_settings' => array(
-      'formatter' => 'collapsible',
-      'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
-        'required_fields' => 1,
-      ),
-    ),
-  );
-  $export['group_alumni_name|node|publication|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
   $field_group->identifier = 'group_alumni_story|node|publication|form';
   $field_group->group_name = 'group_alumni_story';
   $field_group->entity_type = 'node';
@@ -50,22 +20,21 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Alumni story',
+    'label' => 'Alumni/Past Participant Mention',
     'weight' => '13',
     'children' => array(
       0 => 'field_alumni_story',
       1 => 'field_program_single',
-      2 => 'field_year',
-      3 => 'group_alumni_name',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'label' => 'Alumni/Past Participant Mention',
       'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
         'required_fields' => 1,
+        'classes' => '',
+        'description' => '',
       ),
+      'formatter' => 'collapsible',
     ),
   );
   $export['group_alumni_story|node|publication|form'] = $field_group;
