@@ -224,6 +224,7 @@ function gsb_feature_publication_ct_field_group_info() {
       4 => 'field_industry',
       5 => 'field_region',
       6 => 'field_tag',
+      7 => 'field_region_of_interest',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
