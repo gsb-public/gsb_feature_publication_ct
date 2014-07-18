@@ -14,28 +14,11 @@ function gsb_feature_publication_ct_form_publication_node_form_alter(&$form, &$f
   
   $language = $form['language']['#value'];
 
-  // Add required field markers. The actual field validation is done in validate callback.
-  if (!empty($form['field_first_name'][$language])) {
-    $form['field_first_name'][$language][0]['value']['#title'] .= " " . theme('form_required_marker');
-  }
-
-  if (!empty($form['field_last_name'][$language])) {
-    $form['field_last_name'][$language][0]['value']['#title'] .= " " . theme('form_required_marker');
-  }
-
   if (!empty($form['field_program_single'][$language])) {
     $form['field_program_single'][$language]['#title'] .= " " . theme('form_required_marker');
   }
 
-  if (!empty($form['field_year'][$language])) {
-    $form['field_year'][$language][0]['#title'] .= " " . theme('form_required_marker');
-  }
-
   // Hide alumni fields if the alumni checkbox is not checked.
-  $form['field_year']['#states']['invisible'][':input[name="field_alumni_story[' . $language . ']"]'] = array(
-    array('checked' => FALSE),
-  );
-
   $form['field_program_single']['#states']['invisible'][':input[name="field_alumni_story[' . $language . ']"]'] = array(
     array('checked' => FALSE),
   );
@@ -60,19 +43,6 @@ function gsb_feature_publication_ct_form_publication_node_form_alter(&$form, &$f
 }
 
 /**
- *  Implements hook_field_group_pre_render_alter().
- */
-function gsb_feature_publication_ct_field_group_pre_render_alter(&$element, $group, &$form) {
-  // Hide field group for alumni name if alumni checkbox is not checked.
-  if ($element['#id'] == 'node_publication_form_group_alumni_name') {
-    $language = $form['language']['#value'];
-    $element['#states']['invisible'][':input[name="field_alumni_story[' . $language . ']"]'] = array(
-      array('checked' => FALSE),
-    );
-  }
-}
-
-/**
  * Validate callback for publication_node_form.
  *  - Conditionally validate alumni story fields.
  */
@@ -83,24 +53,9 @@ function gsb_feature_publication_ct_publication_node_form_validate($form, &$form
   // If Book is an alumni story we need to manually validate some required fields.
   if ($values['field_alumni_story'][$language][0]['value'] == TRUE) {
 
-    // Validate first and last name.
-    if (empty($values['field_first_name'][$language][0]['value'])) {
-      $field_label = $form['field_first_name'][$language][0]['#title'];
-      form_set_error('field_first_name][und][0][value', $field_label . ' field is required.');
-    }
-    if (empty($values['field_last_name'][$language][0]['value'])) {
-      $field_label = $form['field_last_name'][$language][0]['#title'];
-      form_set_error('field_last_name][und][0][value', $field_label . ' field is required.');
-    }
-
     if (empty($values['field_program_single'][$language][0]['tid'])) {
       $field_label = $form['field_program_single'][$language]['#title'];
       form_set_error('field_program_single][und][0][tid', $field_label . ' field is required.');
-    }
-
-    if (empty($values['field_year'][$language][0]['value'])) {
-      $field_label = $form['field_year'][$language]['#title'];
-      form_set_error('field_year][und][0][value', $field_label . ' field is required.');
     }
   }
 }
