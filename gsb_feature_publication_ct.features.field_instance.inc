@@ -1904,6 +1904,18 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'type' => 'taxonomy_term_reference_link',
         'weight' => 40,
       ),
+      'idea_story_related' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'insight_featured_card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
