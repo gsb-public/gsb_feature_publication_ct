@@ -242,6 +242,39 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_date|node|publication|insight_featured_card';
+  $field_group->group_name = 'group_wrapper_date';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'publication';
+  $field_group->mode = 'insight_featured_card';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Date wrapper',
+    'weight' => '0',
+    'children' => array(
+      0 => 'field_pub_date_day',
+      1 => 'field_year_of_publication',
+      2 => 'field_month',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Date wrapper',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_wrapper_date|node|publication|insight_featured_card'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_wrapper_featured|node|publication|views_content_pane';
   $field_group->group_name = 'group_wrapper_featured';
   $field_group->entity_type = 'node';
