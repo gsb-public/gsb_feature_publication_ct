@@ -56,6 +56,7 @@ features[field_group][] = group_tags_wrapper|node|publication|default
 features[field_group][] = group_tags_wrapper|node|publication|teaser
 features[field_group][] = group_taxonomy|node|publication|form
 features[field_group][] = group_wrapper_commas|node|publication|default
+features[field_group][] = group_wrapper_date|node|publication|insight_featured_card
 features[field_group][] = group_wrapper_featured|node|publication|views_content_pane
 features[field_group][] = group_wrapper_links|node|publication|default
 features[field_group][] = group_wrapper_name|field_collection_item|field_person_other|default
