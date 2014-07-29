@@ -1659,92 +1659,6 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_region'
-  $field_instances['node-publication-field_region'] = array(
-    'bundle' => 'publication',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'business_insight' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 8,
-      ),
-      'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 31,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'idea_story_related' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 23,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 21,
-      ),
-      'teaser_listing' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 31,
-      ),
-      'tiny' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'views_content_pane' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 22,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_region',
-    'label' => 'Region of Interest',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'hs_taxonomy',
-      'settings' => array(
-        'maxlength_js_label' => '',
-      ),
-      'type' => 'taxonomy_hs',
-      'weight' => 20,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-publication-field_region_of_interest'
   $field_instances['node-publication-field_region_of_interest'] = array(
     'bundle' => 'publication',
@@ -1800,73 +1714,6 @@ function gsb_feature_publication_ct_field_default_field_instances() {
       ),
       'type' => 'taxonomy_hs',
       'weight' => 21,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-publication-field_salutation'
-  $field_instances['node-publication-field_salutation'] = array(
-    'bundle' => 'publication',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 28,
-      ),
-      'idea_story_related' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 20,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 5,
-      ),
-      'teaser_listing' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 28,
-      ),
-      'views_content_pane' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 19,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_salutation',
-    'label' => 'Salutation',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'linkit' => array(
-        'enable' => 0,
-        'insert_plugin' => '',
-      ),
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'maxlength_js' => 0,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 11,
     ),
     'workbench_access_field' => 0,
   );
@@ -1935,12 +1782,9 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'field_company_organization' => 'field_company_organization',
         'field_description' => 'field_description',
         'field_file_single_public' => 0,
-        'field_first_name' => 0,
         'field_industry' => 'field_industry',
         'field_issue_number' => 'field_issue_number',
-        'field_last_name' => 0,
         'field_link_single' => 0,
-        'field_middle_name' => 0,
         'field_month' => 0,
         'field_page_count' => 0,
         'field_place_of_publication' => 0,
@@ -1949,12 +1793,9 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'field_pub_date_day' => 0,
         'field_publication_type' => 0,
         'field_publisher' => 'field_publisher',
-        'field_region' => 'field_region',
-        'field_salutation' => 0,
         'field_submit' => 0,
         'field_tag' => 'field_tag',
         'field_volume_number' => 'field_volume_number',
-        'field_year' => 0,
         'field_year_of_publication' => 'field_year_of_publication',
       ),
       'user_register_form' => FALSE,
