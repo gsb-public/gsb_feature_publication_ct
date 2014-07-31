@@ -1793,6 +1793,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'field_pub_date_day' => 0,
         'field_publication_type' => 0,
         'field_publisher' => 'field_publisher',
+        'field_region_of_interest' => 'field_region_of_interest',
         'field_submit' => 0,
         'field_tag' => 'field_tag',
         'field_volume_number' => 'field_volume_number',
