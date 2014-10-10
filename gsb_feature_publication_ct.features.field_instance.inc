@@ -802,6 +802,25 @@ function gsb_feature_publication_ct_field_default_field_instances() {
       'description_field' => 0,
       'file_directory' => 'publication-pdf',
       'file_extensions' => 'pdf',
+      'filefield_paths' => array(
+        'active_updating' => 0,
+        'file_name' => array(
+          'options' => array(
+            'pathauto' => 0,
+            'transliterate' => 0,
+          ),
+          'value' => '[file:ffp-name-only-original].[file:ffp-extension-original]',
+        ),
+        'file_path' => array(
+          'options' => array(
+            'pathauto' => 0,
+            'transliterate' => 0,
+          ),
+          'value' => '',
+        ),
+        'retroactive_update' => 0,
+      ),
+      'filefield_paths_enabled' => 0,
       'max_filesize' => '256 MB',
       'user_register_form' => FALSE,
     ),
