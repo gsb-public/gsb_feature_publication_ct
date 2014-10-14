@@ -186,24 +186,18 @@ function gsb_feature_publication_ct_field_group_info() {
     'label' => 'Tagging',
     'weight' => '14',
     'children' => array(
-      0 => 'field_academic_area_unlimited',
-      1 => 'field_business_insight_topic',
-      2 => 'field_centers_research_programs',
-      3 => 'field_company_organization',
-      4 => 'field_industry',
-      5 => 'field_region',
-      6 => 'field_tag',
-      7 => 'field_region_of_interest',
+      0 => 'group_academic_area',
+      1 => 'group_additional_topics',
+      2 => 'group_regions_of_interest',
+      3 => 'group_centers',
+      4 => 'group_tags',
     ),
-    'format_type' => 'fieldset',
+    'format_type' => 'tabs',
     'format_settings' => array(
-      'label' => 'Tagging',
+      'formatter' => '',
       'instance_settings' => array(
-        'required_fields' => 1,
         'classes' => '',
-        'description' => '',
       ),
-      'formatter' => 'collapsed',
     ),
   );
   $export['group_taxonomy|node|publication|form'] = $field_group;
