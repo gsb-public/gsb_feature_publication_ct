@@ -193,7 +193,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_taxonomy';
   $field_group->data = array(
-    'label' => 'Region of Interest',
+    'label' => 'Regions of Interest',
     'weight' => '45',
     'children' => array(
       0 => 'field_region_of_interest',
