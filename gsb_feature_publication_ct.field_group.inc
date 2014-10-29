@@ -78,7 +78,7 @@ function gsb_feature_publication_ct_field_group_info() {
     'weight' => '13',
     'children' => array(
       0 => 'field_alumni_story',
-      1 => 'field_program_single',
+      1 => 'field_program_unlimited',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -323,8 +323,8 @@ function gsb_feature_publication_ct_field_group_info() {
     'children' => array(
       0 => 'group_academic_area',
       1 => 'group_additional_topics',
-      2 => 'group_regions_of_interest',
-      3 => 'group_centers',
+      2 => 'group_centers',
+      3 => 'group_regions_of_interest',
       4 => 'group_tags',
     ),
     'format_type' => 'tabs',

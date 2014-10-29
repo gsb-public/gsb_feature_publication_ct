@@ -74,7 +74,7 @@ function gsb_feature_publication_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '17',
+          'weight' => '18',
         ),
         'title' => array(
           'weight' => '2',
@@ -86,7 +86,7 @@ function gsb_feature_publication_ct_strongarm() {
           'weight' => '9',
         ),
         'redirect' => array(
-          'weight' => '19',
+          'weight' => '20',
         ),
       ),
       'display' => array(
