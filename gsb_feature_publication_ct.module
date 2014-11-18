@@ -14,12 +14,12 @@ function gsb_feature_publication_ct_form_publication_node_form_alter(&$form, &$f
   
   $language = $form['language']['#value'];
 
-  if (!empty($form['field_program_single'][$language])) {
-    $form['field_program_single'][$language]['#title'] .= " " . theme('form_required_marker');
+  if (!empty($form['field_program_unlimited'][$language])) {
+    $form['field_program_unlimited'][$language]['#title'] .= " " . theme('form_required_marker');
   }
 
   // Hide alumni fields if the alumni checkbox is not checked.
-  $form['field_program_single']['#states']['invisible'][':input[name="field_alumni_story[' . $language . ']"]'] = array(
+  $form['field_program_unlimited']['#states']['invisible'][':input[name="field_alumni_story[' . $language . ']"]'] = array(
     array('checked' => FALSE),
   );
 
@@ -53,9 +53,9 @@ function gsb_feature_publication_ct_publication_node_form_validate($form, &$form
   // If Book is an alumni story we need to manually validate some required fields.
   if ($values['field_alumni_story'][$language][0]['value'] == TRUE) {
 
-    if (empty($values['field_program_single'][$language][0]['tid'])) {
-      $field_label = $form['field_program_single'][$language]['#title'];
-      form_set_error('field_program_single][und][0][tid', $field_label . ' field is required.');
+    if (empty($values['field_program_unlimited'][$language][0]['tid'])) {
+      $field_label = $form['field_program_unlimited'][$language]['#title'];
+      form_set_error('field_program_unlimited][und][0][tid', $field_label . ' field is required.');
     }
   }
 }
