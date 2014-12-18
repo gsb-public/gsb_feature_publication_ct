@@ -381,139 +381,13 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'suffix' => ',&nbsp;',
-        ),
-      ),
-    ),
-    'field_year_of_publication' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'suffix' => '&nbsp;',
-        ),
-      ),
-    ),
-    'field_month' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'suffix' => '&nbsp;',
-        ),
-      ),
-    ),
-  );
-  $export['node|publication|insight_featured_card'] = $ds_fieldsetting;
-
-  $ds_fieldsetting = new stdClass();
-  $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|publication|insight_featured_card';
-  $ds_fieldsetting->entity_type = 'node';
-  $ds_fieldsetting->bundle = 'publication';
-  $ds_fieldsetting->view_mode = 'insight_featured_card';
-  $ds_fieldsetting->settings = array(
-    'title' => array(
-      'weight' => '4',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'link' => '1',
-        'wrapper' => 'h2',
-        'class' => '',
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-        'conditions' => array(),
-      ),
-    ),
-    'field_authors' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-      ),
-    ),
-    'field_pub_date_day' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'suffix' => ',&nbsp;',
-        ),
-      ),
-    ),
-    'field_year_of_publication' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-        ),
-      ),
-    ),
-    'field_month' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-        ),
-      ),
-    ),
-  );
-  $export['node|publication|insight_featured_card'] = $ds_fieldsetting;
-
-  $ds_fieldsetting = new stdClass();
-  $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|publication|insight_featured_card';
-  $ds_fieldsetting->entity_type = 'node';
-  $ds_fieldsetting->bundle = 'publication';
-  $ds_fieldsetting->view_mode = 'insight_featured_card';
-  $ds_fieldsetting->settings = array(
-    'title' => array(
-      'weight' => '4',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'link' => '1',
-        'wrapper' => 'h2',
-        'class' => '',
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-        'conditions' => array(),
-      ),
-    ),
-    'field_authors' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-      ),
-    ),
-    'field_pub_date_day' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
           'suffix' => ',',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
         ),
       ),
     ),
@@ -521,6 +395,12 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
         ),
       ),
     ),
@@ -528,6 +408,12 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
         ),
       ),
     ),
@@ -990,7 +876,7 @@ function gsb_feature_publication_ct_ds_layout_settings_info() {
     'layout_link_custom' => '',
   );
   $export['node|publication|idea_story_related'] = $ds_layout;
-  
+
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
   $ds_layout->id = 'node|publication|insight_featured_card';
