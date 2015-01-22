@@ -114,78 +114,6 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_addthis'
-  $field_instances['node-publication-field_addthis'] = array(
-    'bundle' => 'publication',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'business_insight' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 30,
-      ),
-      'idea_story_related' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 22,
-      ),
-      'insight_featured_card' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 30,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 28,
-      ),
-      'teaser_listing' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 30,
-      ),
-      'views_content_pane' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 21,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_addthis',
-    'label' => 'AddThis',
-    'required' => FALSE,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'addthis',
-      'settings' => array(
-        'maxlength_js_label' => '',
-      ),
-      'type' => 'addthis_button_widget',
-      'weight' => 15,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-publication-field_alumni_story'
   $field_instances['node-publication-field_alumni_story'] = array(
     'bundle' => 'publication',
@@ -2196,7 +2124,6 @@ function gsb_feature_publication_ct_field_default_field_instances() {
   t('<strong>Example</strong>: http://journals.ama.org/article');
   t('Abstract');
   t('Academic Area');
-  t('AddThis');
   t('Additional Topics');
   t('Author & Co-Authors');
   t('Day');
