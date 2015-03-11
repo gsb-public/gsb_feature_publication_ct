@@ -173,5 +173,12 @@ function gsb_feature_publication_ct_strongarm() {
   $strongarm->value = 0;
   $export['workbench_access_node_type_publication'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'workbench_moderation_default_state_publication';
+  $strongarm->value = 'draft';
+  $export['workbench_moderation_default_state_publication'] = $strongarm;
+
   return $export;
 }
