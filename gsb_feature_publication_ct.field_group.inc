@@ -75,7 +75,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Alumni/Past Participant Mention',
-    'weight' => '13',
+    'weight' => '15',
     'children' => array(
       0 => 'field_alumni_story',
       1 => 'field_program_unlimited',
@@ -213,6 +213,36 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_related_content|node|publication|form';
+  $field_group->group_name = 'group_related_content';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'publication';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Related Content',
+    'weight' => '13',
+    'children' => array(
+      0 => 'field_person_ref_unlimited',
+      1 => 'field_related_idea_story',
+      2 => 'field_related_other_unlimited',
+      3 => 'field_link_unlimited',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_related_content|node|publication|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_tags_wrapper|node|publication|business_insight';
   $field_group->group_name = 'group_tags_wrapper';
   $field_group->entity_type = 'node';
@@ -319,7 +349,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tagging',
-    'weight' => '14',
+    'weight' => '16',
     'children' => array(
       0 => 'group_academic_area',
       1 => 'group_additional_topics',
