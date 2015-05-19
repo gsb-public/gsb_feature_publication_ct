@@ -131,7 +131,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 29,
+        'weight' => 16,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -404,7 +404,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 36,
+        'weight' => 19,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -475,7 +475,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 14,
+        'weight' => 5,
       ),
       'idea_story_related' => array(
         'label' => 'hidden',
@@ -680,13 +680,13 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'file',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'file_default',
-        'weight' => 46,
+        'weight' => 5,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -981,13 +981,13 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'link',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'link_default',
-        'weight' => 45,
+        'weight' => 4,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -1236,14 +1236,15 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
           'conditions' => array(),
-          'link' => FALSE,
+          'links' => 0,
+          'view_mode' => 'people_fpp',
         ),
-        'type' => 'entityreference_label',
-        'weight' => 42,
+        'type' => 'entityreference_entity_view',
+        'weight' => 1,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -1395,12 +1396,9 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 41,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 23,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -1657,7 +1655,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 39,
+        'weight' => 21,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -1834,12 +1832,9 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 40,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 22,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -1904,14 +1899,15 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
           'conditions' => array(),
-          'link' => FALSE,
+          'links' => 0,
+          'view_mode' => 'idea_story_related',
         ),
-        'type' => 'entityreference_label',
-        'weight' => 43,
+        'type' => 'entityreference_entity_view',
+        'weight' => 2,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -1978,18 +1974,14 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'field_collection',
+        'label' => 'hidden',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
-          'add' => 'Add',
           'conditions' => array(),
-          'delete' => 'Delete',
-          'description' => TRUE,
-          'edit' => 'Edit',
           'view_mode' => 'full',
         ),
-        'type' => 'field_collection_view',
-        'weight' => 44,
+        'type' => 'gsb_field_formatter_related_items_field_collection',
+        'weight' => 3,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -2060,7 +2052,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 35,
+        'weight' => 18,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -2153,7 +2145,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 38,
+        'weight' => 20,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -2227,7 +2219,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 34,
+        'weight' => 17,
       ),
       'featured' => array(
         'label' => 'above',
