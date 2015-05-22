@@ -116,8 +116,8 @@ function gsb_feature_publication_ct_strongarm() {
       'display' => array(
         'gsb_feature_base_fields_faculty_authors' => array(
           'default' => array(
-            'weight' => '6',
-            'visible' => FALSE,
+            'weight' => '1',
+            'visible' => TRUE,
           ),
           'views_content_pane' => array(
             'weight' => '8',
