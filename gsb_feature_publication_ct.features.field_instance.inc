@@ -1280,7 +1280,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_person_ref_unlimited',
-    'label' => 'Alumni or Staff or PhD Student or MSx Student or Faculty',
+    'label' => 'People (Faculty, Alumni, PhD Student, MSx Fellow, Staff)',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -2527,7 +2527,6 @@ function gsb_feature_publication_ct_field_default_field_instances() {
   t('Abstract');
   t('Academic Area');
   t('Additional Topics');
-  t('Alumni or Staff or PhD Student or MSx Student or Faculty');
   t('Author & Co-Authors');
   t('Day');
   t('Enter a one-paragraph abstract. Multiple paragraphs will be merged into one.');
@@ -2541,6 +2540,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
   t('Month');
   t('Pages');
   t('Place of Publication');
+  t('People (Faculty, Alumni, PhD Student, MSx Fellow, Staff)');
   t('Program');
   t('Publication Link');
   t('Publication PDF');
