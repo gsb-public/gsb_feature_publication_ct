@@ -128,7 +128,7 @@ function gsb_feature_publication_ct_strongarm() {
             'visible' => FALSE,
           ),
           'teaser' => array(
-            'weight' => '0',
+            'weight' => '10',
             'visible' => FALSE,
           ),
           'idea_story_related' => array(
