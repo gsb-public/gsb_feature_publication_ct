@@ -290,14 +290,11 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags:',
-    'weight' => '27',
+    'weight' => '30',
     'children' => array(
       0 => 'field_academic_area_unlimited',
       1 => 'field_business_insight_topic',
-      2 => 'field_company_organization',
-      3 => 'field_industry',
-      4 => 'field_region',
-      5 => 'field_tag',
+      2 => 'field_tag',
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
