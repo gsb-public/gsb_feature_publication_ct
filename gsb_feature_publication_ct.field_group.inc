@@ -223,10 +223,11 @@ function gsb_feature_publication_ct_field_group_info() {
     'label' => 'Related Content',
     'weight' => '13',
     'children' => array(
-      0 => 'field_person_ref_unlimited',
-      1 => 'field_related_idea_story',
-      2 => 'field_related_other_unlimited',
-      3 => 'field_link_unlimited',
+      0 => 'field_file_unlimited_public',
+      1 => 'field_link_unlimited',
+      2 => 'field_related_idea_story',
+      3 => 'field_related_other_unlimited',
+      4 => 'field_person_ref_unlimited',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
