@@ -760,7 +760,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 14,
+      'weight' => 25,
     ),
     'workbench_access_field' => 0,
   );
