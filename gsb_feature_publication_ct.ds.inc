@@ -752,7 +752,7 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'suffix' => ', ',
+          'suffix' => '<span class="comma">,</span>',
         ),
       ),
     ),
