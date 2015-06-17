@@ -94,6 +94,12 @@ function gsb_feature_publication_ct_strongarm() {
       'news_listing' => array(
         'custom_settings' => FALSE,
       ),
+      'compact' => array(
+        'custom_settings' => TRUE,
+      ),
+      'expanded' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -137,6 +143,14 @@ function gsb_feature_publication_ct_strongarm() {
           ),
           'insight_featured_card' => array(
             'weight' => '23',
+            'visible' => FALSE,
+          ),
+          'compact' => array(
+            'weight' => '1',
+            'visible' => FALSE,
+          ),
+          'expanded' => array(
+            'weight' => '1',
             'visible' => FALSE,
           ),
         ),
