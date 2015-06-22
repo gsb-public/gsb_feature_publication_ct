@@ -264,7 +264,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tags:',
-    'weight' => '15',
+    'weight' => '14',
     'children' => array(),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
@@ -368,6 +368,37 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_commas|node|publication|compact';
+  $field_group->group_name = 'group_wrapper_commas';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'publication';
+  $field_group->mode = 'compact';
+  $field_group->parent_name = 'group_wrapper_published';
+  $field_group->data = array(
+    'label' => 'Publication commas',
+    'weight' => '7',
+    'children' => array(
+      0 => 'field_issue_number',
+      1 => 'field_page_count',
+      2 => 'field_pub_date_day',
+      3 => 'field_volume_number',
+      4 => 'field_year_of_publication',
+    ),
+    'format_type' => 'gsb_field_formatter_group_comma_separator',
+    'format_settings' => array(
+      'formatter' => 'open',
+      'instance_settings' => array(
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'classes' => '',
+      ),
+    ),
+  );
+  $export['group_wrapper_commas|node|publication|compact'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_wrapper_commas|node|publication|default';
   $field_group->group_name = 'group_wrapper_commas';
   $field_group->entity_type = 'node';
@@ -376,7 +407,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->parent_name = 'group_wrapper_published';
   $field_group->data = array(
     'label' => 'Publication commas',
-    'weight' => '9',
+    'weight' => '7',
     'children' => array(
       0 => 'field_issue_number',
       1 => 'field_page_count',
@@ -395,6 +426,99 @@ function gsb_feature_publication_ct_field_group_info() {
     ),
   );
   $export['group_wrapper_commas|node|publication|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_commas|node|publication|expanded';
+  $field_group->group_name = 'group_wrapper_commas';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'publication';
+  $field_group->mode = 'expanded';
+  $field_group->parent_name = 'group_wrapper_published';
+  $field_group->data = array(
+    'label' => 'Publication commas',
+    'weight' => '7',
+    'children' => array(
+      0 => 'field_issue_number',
+      1 => 'field_page_count',
+      2 => 'field_pub_date_day',
+      3 => 'field_volume_number',
+      4 => 'field_year_of_publication',
+    ),
+    'format_type' => 'gsb_field_formatter_group_comma_separator',
+    'format_settings' => array(
+      'formatter' => 'open',
+      'instance_settings' => array(
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'classes' => '',
+      ),
+    ),
+  );
+  $export['group_wrapper_commas|node|publication|expanded'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_commas|node|publication|teaser_listing';
+  $field_group->group_name = 'group_wrapper_commas';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'publication';
+  $field_group->mode = 'teaser_listing';
+  $field_group->parent_name = 'group_wrapper_published';
+  $field_group->data = array(
+    'label' => 'Publication commas',
+    'weight' => '7',
+    'children' => array(
+      0 => 'field_issue_number',
+      1 => 'field_page_count',
+      2 => 'field_pub_date_day',
+      3 => 'field_volume_number',
+      4 => 'field_year_of_publication',
+    ),
+    'format_type' => 'gsb_field_formatter_group_comma_separator',
+    'format_settings' => array(
+      'formatter' => 'open',
+      'instance_settings' => array(
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'classes' => '',
+      ),
+    ),
+  );
+  $export['group_wrapper_commas|node|publication|teaser_listing'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_commas|node|publication|views_content_pane';
+  $field_group->group_name = 'group_wrapper_commas';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'publication';
+  $field_group->mode = 'views_content_pane';
+  $field_group->parent_name = 'group_wrapper_published';
+  $field_group->data = array(
+    'label' => 'Publication commas',
+    'weight' => '8',
+    'children' => array(
+      0 => 'field_issue_number',
+      1 => 'field_page_count',
+      2 => 'field_pub_date_day',
+      3 => 'field_volume_number',
+      4 => 'field_year_of_publication',
+    ),
+    'format_type' => 'gsb_field_formatter_group_comma_separator',
+    'format_settings' => array(
+      'formatter' => 'open',
+      'instance_settings' => array(
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'classes' => '',
+      ),
+    ),
+  );
+  $export['group_wrapper_commas|node|publication|views_content_pane'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -508,6 +632,41 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_published|node|publication|compact';
+  $field_group->group_name = 'group_wrapper_published';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'publication';
+  $field_group->mode = 'compact';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Published info',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_place_of_publication',
+      1 => 'field_pub_book_title',
+      2 => 'field_publisher',
+      3 => 'field_month',
+      4 => 'group_wrapper_commas',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Published info',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_wrapper_published|node|publication|compact'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_wrapper_published|node|publication|default';
   $field_group->group_name = 'group_wrapper_published';
   $field_group->entity_type = 'node';
@@ -543,6 +702,41 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_published|node|publication|expanded';
+  $field_group->group_name = 'group_wrapper_published';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'publication';
+  $field_group->mode = 'expanded';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Published info',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_place_of_publication',
+      1 => 'field_pub_book_title',
+      2 => 'field_publisher',
+      3 => 'field_month',
+      4 => 'group_wrapper_commas',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Published info',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_wrapper_published|node|publication|expanded'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_wrapper_published|node|publication|teaser_listing';
   $field_group->group_name = 'group_wrapper_published';
   $field_group->entity_type = 'node';
@@ -553,15 +747,11 @@ function gsb_feature_publication_ct_field_group_info() {
     'label' => 'Published info',
     'weight' => '2',
     'children' => array(
-      0 => 'field_issue_number',
-      1 => 'field_page_count',
-      2 => 'field_place_of_publication',
-      3 => 'field_pub_book_title',
-      4 => 'field_pub_date_day',
-      5 => 'field_publisher',
-      6 => 'field_volume_number',
-      7 => 'field_year_of_publication',
-      8 => 'field_month',
+      0 => 'field_place_of_publication',
+      1 => 'field_pub_book_title',
+      2 => 'field_publisher',
+      3 => 'field_month',
+      4 => 'group_wrapper_commas',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -592,15 +782,11 @@ function gsb_feature_publication_ct_field_group_info() {
     'label' => 'Published info',
     'weight' => '3',
     'children' => array(
-      0 => 'field_issue_number',
-      1 => 'field_page_count',
-      2 => 'field_place_of_publication',
-      3 => 'field_pub_book_title',
-      4 => 'field_pub_date_day',
-      5 => 'field_publisher',
-      6 => 'field_volume_number',
-      7 => 'field_year_of_publication',
-      8 => 'field_month',
+      0 => 'field_place_of_publication',
+      1 => 'field_pub_book_title',
+      2 => 'field_publisher',
+      3 => 'field_month',
+      4 => 'group_wrapper_commas',
     ),
     'format_type' => 'div',
     'format_settings' => array(
