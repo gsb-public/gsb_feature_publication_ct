@@ -2096,7 +2096,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'custom_remove' => '',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'For book chapters only. | <strong>Example</strong>: Broadway Books',
+    'description' => '<strong>Example</strong>: Broadway Books',
     'display' => array(
       'business_insight' => array(
         'label' => 'hidden',
@@ -3050,7 +3050,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
   t('Enter a one-paragraph abstract. Multiple paragraphs will be merged into one.');
   t('Files');
   t('For book chapters only. Enter the city (not the state or country).');
-  t('For book chapters only. | <strong>Example</strong>: Broadway Books');
+  t('<strong>Example</strong>: Broadway Books');
   t('Issue');
   t('Keywords');
   t('Link');
