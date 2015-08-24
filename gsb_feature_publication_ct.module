@@ -37,6 +37,21 @@ function gsb_feature_publication_ct_form_publication_node_form_alter(&$form, &$f
   $form['field_issue_number']['#states']['invisible'][':input[name="field_publication_type[' . $language . ']"]'] = array(
     array('value' => 'book_chapter'),
   );
+  
+  $selected_options = array(
+    'book_chapter',
+    'journal_article',
+    'quick_guide',
+    'research_spotlight',
+    'stanford_closer_look',
+    'survey',
+    'other_acad_publication'
+  );
+  $options = array();
+  foreach($selected_options as $selected_option) {
+    $options[$selected_option] = $form['field_publication_type']['und']['#options'][$selected_option];
+  }
+  $form['field_publication_type']['und']['#options'] = $options;  
 
   // Perform additional validation.
   $form['#validate'][] = 'gsb_feature_publication_ct_publication_node_form_validate';
