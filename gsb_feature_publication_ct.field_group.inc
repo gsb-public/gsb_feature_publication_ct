@@ -107,6 +107,7 @@ function gsb_feature_publication_ct_field_group_info() {
     'weight' => '46',
     'children' => array(
       0 => 'field_centers_research_programs',
+      1 => 'field_circle_topics',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
