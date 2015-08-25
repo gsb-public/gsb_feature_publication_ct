@@ -598,7 +598,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'settings' => array(
       'custom_add_another' => '',
       'custom_remove' => '',
-      'use_hierarchical_select_lite' => 0,
+      'use_hierarchical_select_lite' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3039,6 +3039,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('<strong>Example</strong>: Broadway Books');
   t('<strong>Example</strong>: Journal of Marketing Research');
   t('<strong>Example</strong>: http://journals.ama.org/article');
   t('Abstract');
@@ -3050,7 +3051,6 @@ function gsb_feature_publication_ct_field_default_field_instances() {
   t('Enter a one-paragraph abstract. Multiple paragraphs will be merged into one.');
   t('Files');
   t('For book chapters only. Enter the city (not the state or country).');
-  t('<strong>Example</strong>: Broadway Books');
   t('Issue');
   t('Keywords');
   t('Link');
