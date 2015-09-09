@@ -641,7 +641,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Published info',
-    'weight' => '2',
+    'weight' => '3',
     'children' => array(
       0 => 'field_place_of_publication',
       1 => 'field_pub_book_title',
@@ -711,7 +711,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Published info',
-    'weight' => '2',
+    'weight' => '3',
     'children' => array(
       0 => 'field_place_of_publication',
       1 => 'field_pub_book_title',

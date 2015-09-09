@@ -146,11 +146,11 @@ function gsb_feature_publication_ct_strongarm() {
             'visible' => FALSE,
           ),
           'compact' => array(
-            'weight' => '14',
+            'weight' => '20',
             'visible' => FALSE,
           ),
           'expanded' => array(
-            'weight' => '11',
+            'weight' => '21',
             'visible' => FALSE,
           ),
         ),

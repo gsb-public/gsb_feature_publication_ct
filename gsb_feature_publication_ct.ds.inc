@@ -161,7 +161,7 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'compact';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '0',
+      'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -266,6 +266,20 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
         'ft' => array(
           'func' => 'theme_ds_field_expert',
           'suffix' => ' ',
+        ),
+      ),
+    ),
+    'field_publication_type' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'suffix' => '<span class="pipe">|</span>',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
         ),
       ),
     ),
@@ -534,7 +548,7 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'expanded';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '0',
+      'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -653,6 +667,20 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
         'ft' => array(
           'func' => 'theme_ds_field_expert',
           'suffix' => ' ',
+        ),
+      ),
+    ),
+    'field_publication_type' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'suffix' => '<span class="pipe">|</span>',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
         ),
       ),
     ),
@@ -1130,22 +1158,24 @@ function gsb_feature_publication_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'title',
-        1 => 'field_authors',
-        2 => 'group_wrapper_published',
-        3 => 'field_pub_book_title',
-        4 => 'field_place_of_publication',
-        5 => 'field_publisher',
-        6 => 'field_month',
-        7 => 'group_wrapper_commas',
-        8 => 'field_pub_date_day',
-        9 => 'field_year_of_publication',
-        10 => 'field_volume_number',
-        11 => 'field_issue_number',
-        12 => 'field_page_count',
+        0 => 'field_publication_type',
+        1 => 'title',
+        2 => 'field_authors',
+        3 => 'group_wrapper_published',
+        4 => 'field_pub_book_title',
+        5 => 'field_place_of_publication',
+        6 => 'field_publisher',
+        7 => 'field_month',
+        8 => 'group_wrapper_commas',
+        9 => 'field_pub_date_day',
+        10 => 'field_year_of_publication',
+        11 => 'field_volume_number',
+        12 => 'field_issue_number',
+        13 => 'field_page_count',
       ),
     ),
     'fields' => array(
+      'field_publication_type' => 'ds_content',
       'title' => 'ds_content',
       'field_authors' => 'ds_content',
       'group_wrapper_published' => 'ds_content',
@@ -1268,23 +1298,25 @@ function gsb_feature_publication_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'title',
-        1 => 'field_authors',
-        2 => 'group_wrapper_published',
-        3 => 'field_pub_book_title',
-        4 => 'field_description',
-        5 => 'field_place_of_publication',
-        6 => 'field_publisher',
-        7 => 'field_month',
-        8 => 'group_wrapper_commas',
-        9 => 'field_pub_date_day',
-        10 => 'field_year_of_publication',
-        11 => 'field_volume_number',
-        12 => 'field_issue_number',
-        13 => 'field_page_count',
+        0 => 'field_publication_type',
+        1 => 'title',
+        2 => 'field_authors',
+        3 => 'group_wrapper_published',
+        4 => 'field_pub_book_title',
+        5 => 'field_description',
+        6 => 'field_place_of_publication',
+        7 => 'field_publisher',
+        8 => 'field_month',
+        9 => 'group_wrapper_commas',
+        10 => 'field_pub_date_day',
+        11 => 'field_year_of_publication',
+        12 => 'field_volume_number',
+        13 => 'field_issue_number',
+        14 => 'field_page_count',
       ),
     ),
     'fields' => array(
+      'field_publication_type' => 'ds_content',
       'title' => 'ds_content',
       'field_authors' => 'ds_content',
       'group_wrapper_published' => 'ds_content',
