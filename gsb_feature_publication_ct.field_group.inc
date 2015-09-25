@@ -408,7 +408,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->parent_name = 'group_wrapper_published';
   $field_group->data = array(
     'label' => 'Publication commas',
-    'weight' => '7',
+    'weight' => '8',
     'children' => array(
       0 => 'field_issue_number',
       1 => 'field_page_count',
@@ -418,11 +418,15 @@ function gsb_feature_publication_ct_field_group_info() {
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
-      'formatter' => 'open',
+      'formatter' => 'collapsible',
       'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-wrapper-commas field-group-fieldset',
         'show_label' => 1,
         'label_element' => 'h3',
-        'classes' => '',
+        'effect' => 'none',
+        'speed' => 'fast',
+        'id' => '',
       ),
     ),
   );
@@ -480,12 +484,17 @@ function gsb_feature_publication_ct_field_group_info() {
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
-      'formatter' => 'open',
+      'label' => 'Publication commas',
       'instance_settings' => array(
-        'show_label' => 1,
+        'id' => '',
+        'classes' => 'group-wrapper-commas field-group-fieldset',
+        'description' => '',
+        'show_label' => '1',
         'label_element' => 'h3',
-        'classes' => '',
+        'effect' => 'none',
+        'speed' => 'fast',
       ),
+      'formatter' => 'open',
     ),
   );
   $export['group_wrapper_commas|node|publication|teaser_listing'] = $field_group;
@@ -816,7 +825,7 @@ function gsb_feature_publication_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Related',
-    'weight' => '7',
+    'weight' => '6',
     'children' => array(
       0 => 'field_file_unlimited_public',
       1 => 'field_link_unlimited',
@@ -948,12 +957,12 @@ function gsb_feature_publication_ct_field_group_info() {
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
-      'formatter' => 'open',
+      'label' => 'Topics',
       'instance_settings' => array(
-        'show_label' => 1,
-        'label_element' => 'h3',
-        'classes' => '',
+        'item_count' => '0',
+        'classes' => 'group-wrapper-topics field-group-fieldset',
       ),
+      'formatter' => 'open',
     ),
   );
   $export['group_wrapper_topics|node|publication|teaser_listing'] = $field_group;

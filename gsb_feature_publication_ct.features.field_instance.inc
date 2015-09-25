@@ -40,7 +40,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'tid_or_name' => 'tid',
         ),
         'type' => 'gsb_field_formatter_path_term_separator',
-        'weight' => 7,
+        'weight' => 9,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -363,7 +363,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'tid_or_name' => 'tid',
         ),
         'type' => 'gsb_field_formatter_path_term_separator',
-        'weight' => 8,
+        'weight' => 10,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -633,7 +633,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -776,7 +776,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'text' => 'Download',
         ),
         'type' => 'gsb_field_formatter_download_link',
-        'weight' => 6,
+        'weight' => 11,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -882,7 +882,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'file_default',
-        'weight' => 6,
+        'weight' => 15,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1001,7 +1001,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1118,7 +1118,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'link_label',
-        'weight' => 5,
+        'weight' => 10,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1225,7 +1225,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'link_default',
-        'weight' => 5,
+        'weight' => 14,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1429,7 +1429,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1530,7 +1530,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'view_mode' => 'people_fpp',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 2,
+        'weight' => 11,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1911,7 +1911,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'thousand_separator' => '',
         ),
         'type' => 'number_integer',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -2328,7 +2328,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'view_mode' => 'idea_story_related',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 3,
+        'weight' => 12,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -2414,7 +2414,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'gsb_field_formatter_related_items_field_collection',
-        'weight' => 4,
+        'weight' => 13,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -2803,7 +2803,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -2916,6 +2916,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
@@ -2931,10 +2932,11 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -2946,6 +2948,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
@@ -2967,6 +2970,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
@@ -2988,6 +2992,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
@@ -3003,6 +3008,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',

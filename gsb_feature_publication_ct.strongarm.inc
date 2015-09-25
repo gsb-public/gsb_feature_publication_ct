@@ -100,6 +100,12 @@ function gsb_feature_publication_ct_strongarm() {
       'expanded' => array(
         'custom_settings' => TRUE,
       ),
+      'event_contacts' => array(
+        'custom_settings' => FALSE,
+      ),
+      'main_list' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -122,7 +128,7 @@ function gsb_feature_publication_ct_strongarm() {
       'display' => array(
         'gsb_feature_base_fields_faculty_authors' => array(
           'default' => array(
-            'weight' => '1',
+            'weight' => '10',
             'visible' => TRUE,
           ),
           'views_content_pane' => array(
