@@ -387,12 +387,12 @@ function gsb_feature_publication_ct_field_group_info() {
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
-      'formatter' => 'open',
+      'label' => 'Publication commas',
       'instance_settings' => array(
-        'show_label' => 1,
-        'label_element' => 'h3',
-        'classes' => '',
+        'item_count' => '0',
+        'classes' => 'group-wrapper-commas field-group-fieldset',
       ),
+      'formatter' => 'open',
     ),
   );
   $export['group_wrapper_commas|node|publication|compact'] = $field_group;
@@ -453,12 +453,12 @@ function gsb_feature_publication_ct_field_group_info() {
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
-      'formatter' => 'open',
+      'label' => 'Publication commas',
       'instance_settings' => array(
-        'show_label' => 1,
-        'label_element' => 'h3',
-        'classes' => '',
+        'item_count' => '0',
+        'classes' => 'group-wrapper-commas field-group-fieldset',
       ),
+      'formatter' => 'open',
     ),
   );
   $export['group_wrapper_commas|node|publication|expanded'] = $field_group;
