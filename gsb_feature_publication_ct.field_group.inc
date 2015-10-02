@@ -418,16 +418,12 @@ function gsb_feature_publication_ct_field_group_info() {
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'label' => 'Publication commas',
       'instance_settings' => array(
-        'description' => '',
+        'item_count' => '0',
         'classes' => 'group-wrapper-commas field-group-fieldset',
-        'show_label' => 1,
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
-        'id' => '',
       ),
+      'formatter' => 'open',
     ),
   );
   $export['group_wrapper_commas|node|publication|default'] = $field_group;
