@@ -421,7 +421,7 @@ function gsb_feature_publication_ct_field_group_info() {
       'label' => 'Publication commas',
       'instance_settings' => array(
         'item_count' => '0',
-        'classes' => 'group-wrapper-commas field-group-fieldset',
+        'classes' => 'group-wrapper-commas',
       ),
       'formatter' => 'open',
     ),
