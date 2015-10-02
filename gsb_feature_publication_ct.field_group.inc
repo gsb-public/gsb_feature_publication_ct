@@ -697,7 +697,7 @@ function gsb_feature_publication_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Published info',
       'instance_settings' => array(
-        'classes' => '',
+        'classes' => 'field-group-format group_wrapper_published field-group-div group-wrapper-published',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -732,7 +732,7 @@ function gsb_feature_publication_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Published info',
       'instance_settings' => array(
-        'classes' => '',
+        'classes' => 'field-group-format group_wrapper_published field-group-div group-wrapper-published',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -767,7 +767,7 @@ function gsb_feature_publication_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Published info',
       'instance_settings' => array(
-        'classes' => '',
+        'classes' => 'field-group-format group_wrapper_published field-group-div group-wrapper-published',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -802,7 +802,7 @@ function gsb_feature_publication_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Published info',
       'instance_settings' => array(
-        'classes' => '',
+        'classes' => 'field-group-format group_wrapper_published field-group-div group-wrapper-published',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
