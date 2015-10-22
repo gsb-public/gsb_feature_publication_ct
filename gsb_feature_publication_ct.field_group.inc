@@ -516,12 +516,12 @@ function gsb_feature_publication_ct_field_group_info() {
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
-      'formatter' => 'open',
+      'label' => 'Publication commas',
       'instance_settings' => array(
-        'show_label' => 1,
-        'label_element' => 'h3',
-        'classes' => '',
+        'item_count' => '0',
+        'classes' => 'group-wrapper-commas',
       ),
+      'formatter' => 'open',
     ),
   );
   $export['group_wrapper_commas|node|publication|views_content_pane'] = $field_group;
@@ -547,7 +547,8 @@ function gsb_feature_publication_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Date wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-date',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -579,7 +580,8 @@ function gsb_feature_publication_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Featured wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-featured',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -835,7 +837,7 @@ function gsb_feature_publication_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Related',
       'instance_settings' => array(
-        'classes' => '',
+        'classes' => 'group-wrapper-related',
         'description' => '',
       ),
       'formatter' => 'collapsed',
@@ -863,7 +865,8 @@ function gsb_feature_publication_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Title wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-title',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -895,7 +898,8 @@ function gsb_feature_publication_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Title wrapper',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-title',
         'description' => '',
         'show_label' => '0',
         'label_element' => 'h3',
@@ -928,7 +932,7 @@ function gsb_feature_publication_ct_field_group_info() {
       'label' => 'Topics',
       'instance_settings' => array(
         'item_count' => '0',
-        'classes' => '',
+        'classes' => 'group-wrapper-topics',
       ),
       'formatter' => 'open',
     ),
