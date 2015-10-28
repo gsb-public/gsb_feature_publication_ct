@@ -140,7 +140,7 @@ function gsb_feature_publication_ct_strongarm() {
             'visible' => FALSE,
           ),
           'teaser' => array(
-            'weight' => '10',
+            'weight' => '23',
             'visible' => FALSE,
           ),
           'idea_story_related' => array(
@@ -148,7 +148,7 @@ function gsb_feature_publication_ct_strongarm() {
             'visible' => FALSE,
           ),
           'insight_featured_card' => array(
-            'weight' => '23',
+            'weight' => '28',
             'visible' => FALSE,
           ),
           'compact' => array(

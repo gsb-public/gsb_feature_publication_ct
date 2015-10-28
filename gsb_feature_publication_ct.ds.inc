@@ -718,7 +718,7 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'insight_featured_card';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '4',
+      'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -750,17 +750,64 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_issue_number' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'prefix' => 'Issue ',
+        ),
+      ),
+    ),
+    'field_page_count' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'prefix' => 'Pages ',
+        ),
+      ),
+    ),
+    'field_place_of_publication' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'suffix' => ': ',
+        ),
+      ),
+    ),
+    'field_pub_book_title' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'suffix' => '. ',
+          'ow' => TRUE,
+          'ow-el' => 'em',
+          'ow-cl' => '',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
     'field_pub_date_day' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'suffix' => ',',
-          'ow' => TRUE,
-          'ow-el' => 'span',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_publisher' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'suffix' => ', ',
+        ),
+      ),
+    ),
+    'field_volume_number' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'prefix' => 'Vol. ',
         ),
       ),
     ),
@@ -768,12 +815,6 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'span',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
         ),
       ),
     ),
@@ -781,10 +822,11 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'suffix' => ' ',
           'ow' => TRUE,
-          'ow-el' => 'span',
+          'ow-el' => 'div',
           'ow-cl' => '',
-          'ow-def-cl' => TRUE,
+          'ow-def-cl' => FALSE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
         ),
@@ -801,7 +843,7 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'teaser';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '3',
+      'weight' => '0',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -824,6 +866,82 @@ function gsb_feature_publication_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+        ),
+      ),
+    ),
+    'field_issue_number' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'prefix' => 'Issue ',
+        ),
+      ),
+    ),
+    'field_page_count' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'prefix' => 'Pages ',
+        ),
+      ),
+    ),
+    'field_place_of_publication' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'suffix' => ': ',
+        ),
+      ),
+    ),
+    'field_pub_book_title' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'suffix' => '. ',
+          'ow' => TRUE,
+          'ow-el' => 'em',
+          'ow-cl' => '',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_pub_date_day' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+        ),
+      ),
+    ),
+    'field_publisher' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'suffix' => ', ',
+        ),
+      ),
+    ),
+    'field_volume_number' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'prefix' => 'Vol. ',
+        ),
+      ),
+    ),
+    'field_year_of_publication' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+        ),
+      ),
+    ),
+    'field_month' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'suffix' => ' ',
         ),
       ),
     ),
@@ -1386,21 +1504,35 @@ function gsb_feature_publication_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'group_wrapper_date',
-        1 => 'field_month',
+        0 => 'title',
+        1 => 'field_authors',
         2 => 'field_pub_date_day',
         3 => 'field_year_of_publication',
-        4 => 'title',
-        5 => 'field_authors',
+        4 => 'group_wrapper_published',
+        5 => 'field_volume_number',
+        6 => 'field_pub_book_title',
+        7 => 'field_place_of_publication',
+        8 => 'field_issue_number',
+        9 => 'field_page_count',
+        10 => 'field_publisher',
+        11 => 'field_month',
+        12 => 'group_wrapper_commas',
       ),
     ),
     'fields' => array(
-      'group_wrapper_date' => 'ds_content',
-      'field_month' => 'ds_content',
-      'field_pub_date_day' => 'ds_content',
-      'field_year_of_publication' => 'ds_content',
       'title' => 'ds_content',
       'field_authors' => 'ds_content',
+      'field_pub_date_day' => 'ds_content',
+      'field_year_of_publication' => 'ds_content',
+      'group_wrapper_published' => 'ds_content',
+      'field_volume_number' => 'ds_content',
+      'field_pub_book_title' => 'ds_content',
+      'field_place_of_publication' => 'ds_content',
+      'field_issue_number' => 'ds_content',
+      'field_page_count' => 'ds_content',
+      'field_publisher' => 'ds_content',
+      'field_month' => 'ds_content',
+      'group_wrapper_commas' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -1426,11 +1558,33 @@ function gsb_feature_publication_ct_ds_layout_settings_info() {
       'ds_content' => array(
         0 => 'title',
         1 => 'field_authors',
+        2 => 'group_wrapper_published',
+        3 => 'field_pub_book_title',
+        4 => 'field_place_of_publication',
+        5 => 'field_publisher',
+        6 => 'field_month',
+        7 => 'group_wrapper_commas',
+        8 => 'field_pub_date_day',
+        9 => 'field_year_of_publication',
+        10 => 'field_volume_number',
+        11 => 'field_issue_number',
+        12 => 'field_page_count',
       ),
     ),
     'fields' => array(
       'title' => 'ds_content',
       'field_authors' => 'ds_content',
+      'group_wrapper_published' => 'ds_content',
+      'field_pub_book_title' => 'ds_content',
+      'field_place_of_publication' => 'ds_content',
+      'field_publisher' => 'ds_content',
+      'field_month' => 'ds_content',
+      'group_wrapper_commas' => 'ds_content',
+      'field_pub_date_day' => 'ds_content',
+      'field_year_of_publication' => 'ds_content',
+      'field_volume_number' => 'ds_content',
+      'field_issue_number' => 'ds_content',
+      'field_page_count' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
