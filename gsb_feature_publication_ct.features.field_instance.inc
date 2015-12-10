@@ -10,7 +10,7 @@
 function gsb_feature_publication_ct_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-publication-field_academic_area_unlimited'
+  // Exported field_instance: 'node-publication-field_academic_area_unlimited'.
   $field_instances['node-publication-field_academic_area_unlimited'] = array(
     'bundle' => 'publication',
     'default_value' => NULL,
@@ -126,7 +126,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_alumni_story'
+  // Exported field_instance: 'node-publication-field_alumni_story'.
   $field_instances['node-publication-field_alumni_story'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -211,7 +211,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_authors'
+  // Exported field_instance: 'node-publication-field_authors'.
   $field_instances['node-publication-field_authors'] = array(
     'bundle' => 'publication',
     'custom_add_another' => 'Add Another Author',
@@ -331,7 +331,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_business_insight_topic'
+  // Exported field_instance: 'node-publication-field_business_insight_topic'.
   $field_instances['node-publication-field_business_insight_topic'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -449,7 +449,8 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_centers_research_programs'
+  // Exported field_instance:
+  // 'node-publication-field_centers_research_programs'.
   $field_instances['node-publication-field_centers_research_programs'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -529,7 +530,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_circle_topics'
+  // Exported field_instance: 'node-publication-field_circle_topics'.
   $field_instances['node-publication-field_circle_topics'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -608,7 +609,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_description'
+  // Exported field_instance: 'node-publication-field_description'.
   $field_instances['node-publication-field_description'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -744,7 +745,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_file_single_public'
+  // Exported field_instance: 'node-publication-field_file_single_public'.
   $field_instances['node-publication-field_file_single_public'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -858,7 +859,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_file_unlimited_public'
+  // Exported field_instance: 'node-publication-field_file_unlimited_public'.
   $field_instances['node-publication-field_file_unlimited_public'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -964,7 +965,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_issue_number'
+  // Exported field_instance: 'node-publication-field_issue_number'.
   $field_instances['node-publication-field_issue_number'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -1103,7 +1104,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_link_single'
+  // Exported field_instance: 'node-publication-field_link_single'.
   $field_instances['node-publication-field_link_single'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -1210,7 +1211,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_link_unlimited'
+  // Exported field_instance: 'node-publication-field_link_unlimited'.
   $field_instances['node-publication-field_link_unlimited'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -1315,7 +1316,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_month'
+  // Exported field_instance: 'node-publication-field_month'.
   $field_instances['node-publication-field_month'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -1416,7 +1417,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_page_count'
+  // Exported field_instance: 'node-publication-field_page_count'.
   $field_instances['node-publication-field_page_count'] = array(
     'bundle' => 'publication',
     'default_value' => NULL,
@@ -1522,7 +1523,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_person_ref_unlimited'
+  // Exported field_instance: 'node-publication-field_person_ref_unlimited'.
   $field_instances['node-publication-field_person_ref_unlimited'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -1609,7 +1610,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_place_of_publication'
+  // Exported field_instance: 'node-publication-field_place_of_publication'.
   $field_instances['node-publication-field_place_of_publication'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -1717,7 +1718,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_program_unlimited'
+  // Exported field_instance: 'node-publication-field_program_unlimited'.
   $field_instances['node-publication-field_program_unlimited'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -1798,7 +1799,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_pub_book_title'
+  // Exported field_instance: 'node-publication-field_pub_book_title'.
   $field_instances['node-publication-field_pub_book_title'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -1906,7 +1907,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_pub_date_day'
+  // Exported field_instance: 'node-publication-field_pub_date_day'.
   $field_instances['node-publication-field_pub_date_day'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -2039,7 +2040,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_publication_type'
+  // Exported field_instance: 'node-publication-field_publication_type'.
   $field_instances['node-publication-field_publication_type'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -2130,7 +2131,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_publisher'
+  // Exported field_instance: 'node-publication-field_publisher'.
   $field_instances['node-publication-field_publisher'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -2265,7 +2266,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_region_of_interest'
+  // Exported field_instance: 'node-publication-field_region_of_interest'.
   $field_instances['node-publication-field_region_of_interest'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -2345,7 +2346,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_related_idea_story'
+  // Exported field_instance: 'node-publication-field_related_idea_story'.
   $field_instances['node-publication-field_related_idea_story'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -2432,7 +2433,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_related_other_unlimited'
+  // Exported field_instance: 'node-publication-field_related_other_unlimited'.
   $field_instances['node-publication-field_related_other_unlimited'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -2514,7 +2515,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_search_field'
+  // Exported field_instance: 'node-publication-field_search_field'.
   $field_instances['node-publication-field_search_field'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -2627,7 +2628,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_submit'
+  // Exported field_instance: 'node-publication-field_submit'.
   $field_instances['node-publication-field_submit'] = array(
     'bundle' => 'publication',
     'deleted' => 0,
@@ -2704,7 +2705,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_tag'
+  // Exported field_instance: 'node-publication-field_tag'.
   $field_instances['node-publication-field_tag'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -2810,7 +2811,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_volume_number'
+  // Exported field_instance: 'node-publication-field_volume_number'.
   $field_instances['node-publication-field_volume_number'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
@@ -2945,7 +2946,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-publication-field_year_of_publication'
+  // Exported field_instance: 'node-publication-field_year_of_publication'.
   $field_instances['node-publication-field_year_of_publication'] = array(
     'bundle' => 'publication',
     'custom_add_another' => '',
