@@ -59,13 +59,14 @@ function gsb_feature_publication_ct_form_publication_node_form_alter(&$form, &$f
   );
   
   $selected_options = array(
+    'other_acad_publication',
     'book_chapter',
+    'core_concept',
     'journal_article',
     'quick_guide',
     'research_spotlight',
     'stanford_closer_look',
     'survey',
-    'other_acad_publication'
   );
   $options = array();
   foreach($selected_options as $selected_option) {
