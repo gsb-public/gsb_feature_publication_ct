@@ -35,6 +35,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'limit_depth' => 0,
+          'link_to_term' => TRUE,
           'path_prefix' => 'faculty-research/publications?academic-area[]=',
           'separator' => ', ',
           'tid_or_name' => 'tid',
@@ -84,6 +85,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'limit_depth' => 0,
+          'link_to_term' => TRUE,
           'path_prefix' => 'faculty-research/publications?academic-area[]=',
           'separator' => ', ',
           'tid_or_name' => 'tid',
@@ -358,6 +360,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'limit_depth' => 0,
+          'link_to_term' => TRUE,
           'path_prefix' => 'faculty-research/publications?topics[]=',
           'separator' => ', ',
           'tid_or_name' => 'tid',
@@ -407,6 +410,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'limit_depth' => 0,
+          'link_to_term' => TRUE,
           'path_prefix' => 'faculty-research/publications?topics[]=',
           'separator' => ', ',
           'tid_or_name' => 'tid',
@@ -1544,6 +1548,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'links' => 0,
+          'use_content_language' => TRUE,
           'view_mode' => 'people_fpp',
         ),
         'type' => 'entityreference_entity_view',
@@ -2287,6 +2292,7 @@ function gsb_feature_publication_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'links' => 0,
+          'use_content_language' => TRUE,
           'view_mode' => 'idea_story_related',
         ),
         'type' => 'entityreference_entity_view',
